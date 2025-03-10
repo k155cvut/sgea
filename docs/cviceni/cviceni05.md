@@ -21,9 +21,10 @@ title: Cvičení 5
 
     nastavení základní __mapové symbologie__
 
--   :material-export:{ .xl }
+-   :material-map-outline:{ .xl }
 
-    __export dat__ pro použití v CAD software
+    seznámení s __vybranými metodami tematické vizualizace__
+    
 </div>
 
 <hr class="level-1">
