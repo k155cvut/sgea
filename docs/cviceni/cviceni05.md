@@ -162,7 +162,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 -->
 
-Do prázdné mapy na ArcGIS Online přidejte vrstvu budov individuální a hromadné rekreace __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu *stavba pro rodinnou rekreaci* (`Způsob využití = 8`) nebo *stavba ubytovacího zařízení* (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2024__{.bg} na ArcGIS Online.<br>
+Do prázdné mapy na ArcGIS Online přidejte vrstvu *budov individuální a hromadné rekreace* __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu ***stavba pro rodinnou rekreaci*** (`Způsob využití = 8`) nebo ***stavba ubytovacího zařízení*** (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2024__{.bg} na ArcGIS Online.<br>
 
 Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextovém menu vrstvy).
 
@@ -183,9 +183,9 @@ Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextov�
 
 ## Výstupy cvičení
 
-Povinnými výstupy úlohy jsou __webová mapa__{.outlined} a __CAD výkres__{.outlined}. Webová mapa je po uložení a nastavení sdílení přístupná přes __URL adresu__, kterou je nutné odevzdat vyučujícímu. Spolu s CAD výkresem je tyto výstupy __nutné odevzdat přes systém Moodle__.
+Povinnými výstupy úlohy jsou dvě __webové mapy__{.outlined}. Webová mapa je po uložení a nastavení sdílení přístupná přes __URL adresu__, kterou je nutné odeslat vyučujícímu. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
 
-Úloha je uznána, pokud webová mapa a CAD výkres obsahují __všechny požadované náležitosti__ (viz níže).
+Úloha je uznána, pokud webové mapy obsahují __všechny požadované náležitosti__ (viz níže).
 
 ???+ note-grey "Požadované náležitosti odevzdaných výstupů"
     __Webová mapa__
@@ -197,12 +197,6 @@ Povinnými výstupy úlohy jsou __webová mapa__{.outlined} a __CAD výkres__{.o
     - na vrstvy rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně)
     - sdílení webové mapy nastaveno __"v rámci organizace"__ či __"veřejně"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
 
-    __CAD výkres__
-
-    - __formát PDF__
-    - obsahem musí být __pouze hranice obce__ a __stavební objekty__ (omezené hranicí obce)
-    - hranice obce __barevně odlišena__ od stavebních objektů
-    - __název obce__ stejnou barvou jako hranice obce
 
 ### Opravy
 
