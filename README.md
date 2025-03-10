@@ -1,1 +1,1 @@
-# sgea
+# cvut-sgea
