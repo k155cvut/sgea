@@ -30,25 +30,37 @@ title: Cvičení 5
 
 ## Základní topografická mapa a ZABAGED
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+**Základní topografická mapa ČR (ZTM ČR)**
+
+Základní topografické mapy ČR představují soubor mapových děl, které poskytují podrobné a aktuální informace o území České republiky. Jedná se o nejpodrobnější obecně topografické mapové dílo České republiky. Mapy jsou vytvářeny v měřítcích od 1 : 5000 po 1 : 200 000, s přehlednými mapami o půlmilionovém a milionovém měřítku) a slouží jako základní zdroj geografických dat pro široké spektrum uživatelů, včetně veřejné správy, odborníků i veřejnosti.<br>
+ZTM ČR se vytváří digitální technologií z kartografické databáze, která je aktualizována na základě Základní báze geografických dat České republiky (ZABAGED) a databáze geografických jmen České republiky Geonames. Mapy obsahují informace o terénu, vodstvu, sídelní struktuře, dopravní síti, vegetaci a dalších prvcích krajiny.
+{style="color:grey;"}
+
+**ZABAGED (Základní báze geografických dat České republiky)**
+
+ZABAGED je vektorový geografický digitální model území České republiky, který spravuje Zeměměřický úřad. Tato databáze obsahuje podrobné a aktuální informace o polohopisu, výškopisu a dalších geografických prvcích území ČR, v měřítku odpovídajícím minimálně referenční hodnotě 5000, mnohdy ale v úrovni podrobnější. ZABAGED je základním zdrojem dat pro tvorbu ZTM ČR a dalších geografických informačních systémů.<br>
+ZABAGED představuje důležitý zdroj dat pro analýzu území, tvorbu map a 3D modelů či vizualizací. Je využívána jako základní informační vrstva v územně orientovaných informačních a řídících systémech veřejné správy ČR.
 {style="color:grey;"}
 
 <hr class="level-1">
 
 ## Zadání úlohy
 
-Pomocí mapových služeb od ČÚZK vytvořte __webovou mapu__ obsahující budovy (stavební objekty) v zadané obci __barevně rozlišené dle připojení na kanalizaci a plyn__.
+Pomocí mapových služeb od ČÚZK vytvořte __dvojici webových map__ dle individuálního zadání níže. 
+
+**Mapa I** bude obsahovat budovy (stavební objekty) v zadané obci __barevně rozlišené dle připojení na kanalizaci a plyn__.
+**Mapa II** bude zobrazovat v zadané ORP __rekreační potenciál__ pomocí metody intenzity jevu (heat map).
 
 ??? task-fg-color "Individuální zadání"
 
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1732083778&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
-## Pracovní postup
+## Mapa I – Pracovní postup
 
 <div class="annotate" markdown>
 
-- Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers: RÚIAN__{.bg}, __podvrstvu__ __:material-layers-triple: Obec__{.bg} z [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/ "Služby → Prohlížecí → Esri ArcGIS Server (nebo WMS)"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
+- Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers-triple: SGEA_obce_2024__{.bg}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
 
 - Vrstvě __nastavte :material-filter: filtr dle kódu__ (v krajním případě dle názvu) __zadané obce__. Filtr omezí zobrazení prvků pouze na jednu zadanou obec.__(2)__{title="ukázka"}
 
@@ -109,7 +121,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Vyučujícímu odevzdejte __URL adresu webové mapy__.__(9)__
 
-???+ task-fg-color "Výstup cvičení (část první): Webová mapa (ukázka)"
+???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
 
     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://experience.arcgis.com/experience/0e6a7769af1d479489af74e2f98ca195"></iframe>
 
@@ -125,6 +137,9 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 ---
 
+## Mapa II – pracovní postup
+
+<!--
 - ~~Obě vrstvy (stavební objekty i obvod zadané obce) __exportujte do formátu Shapefile__ a __stáhněte na disk počítače__.~~
 
 - ~~Shapefile __konvertujte do formátu DXF__. Použijte například [tento](https://mygeodata.cloud/converter/shp-to-dxf){.color_def .underlined_dotted .external_link_icon target="_blank"} webový nástroj.~~
@@ -140,7 +155,6 @@ __:material-gas-burner: Připojení na rozvod plynu__
     <iframe src="https://drive.google.com/file/d/1MSAjhVjESNXBqnbiRNS2tz16X78QGy1Q/preview" width="100%" height="400" style="border:0;"></iframe>
 
 - Pomocí :simple-arcgis: ArcGIS Pro (desktopová verze platformy ArcGIS, mimo rozsah kurzu) lze CAD výkres generovat s rozlišením vrstev dle atributu (tedy například rozlišit stavební objekty dle připojení na kanalizační síť i v CAD výkresu)
-<!--
 
 ![](https://dummyimage.com/600x400/0065bd/57b1ff&text=výsledný+CAD+výkres){width=500px}
 {align=center}
@@ -148,9 +162,13 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 -->
 
+Do prázdné mapy na ArcGIS Online přidejte vrstvu budov individuální a hromadné rekreace __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu *stavba pro rodinnou rekreaci* (`Způsob využití = 8`) nebo *stavba ubytovacího zařízení* (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2024__{.bg} na ArcGIS Online.<br>
+
+Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextovém menu vrstvy).
+
 </div> <!-- pro anotace -->
 
-1.  ![](../assets/cviceni04/img01.png){ .no-filter width=700px} vrstva "RÚIAN/Obec"
+1.  ![](../assets/cviceni04/img01.png){ .no-filter width=700px} vrstva obcí
 2.  ![](../assets/cviceni04/img02.png){ .no-filter width=700px} filtr dle kódu obce
 3.  ![](../assets/cviceni04/img03.png){ .no-filter width=700px} vrstva "RÚIAN/StavebniObjekt"
 4.  ![](../assets/cviceni04/img04.png){ .no-filter width=200px}<br> parametry nástroje "Overlay Layers"
