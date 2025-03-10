@@ -200,7 +200,7 @@ Povinnými výstupy úlohy jsou dvě __webové mapy__{.outlined}. Webová mapa j
 
 ### Opravy
 
-V případě, že odevzdaný výstup není správný, je vyučujícím emailem __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze odevzdat po __maximálně dvou opravách__, v případě pozdního odevzdání či nesprávného výstupu po druhé opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
+V případě, že odevzdaný výstup není správný, je vyučujícím emailem __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze opravit __maximálně jednou__, v případě pozdního odevzdání či nesprávného výstupu po provedené opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
 [Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
 {align=center}
