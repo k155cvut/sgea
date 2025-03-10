@@ -19,12 +19,12 @@ title: Cvičení 5
 
 -   :material-map-marker-multiple-outline:{ .xl }
 
-    nastavení základní __mapové symbologie__
+    nastavení základní __mapové symboliky__
 
 -   :material-map-outline:{ .xl }
 
     seznámení s __vybranými metodami tematické vizualizace__
-    
+
 </div>
 
 <hr class="level-1">
