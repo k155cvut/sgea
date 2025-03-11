@@ -36,12 +36,11 @@ Webové mapové služby jsou __webové nástroje poskytující geoprostorová da
 ![](../assets/cviceni03/img01.svg){ .no-filter width=700px}
 {align=center}
 
-Pro webové mapové služby existují různé __standardy komunikace__. Nerozšířenějším je tzv. __WMS__ (Web Map Service) vyvinutý mezinárodní standardizační organizací Open Geospatial Consortium (OGC). Stadard je otevřený a snadno použitelný. Kromě WMS existuje např. také proprietární stadard společnosti Esri (provozovatel platformy ArcGIS Online) – tzv. ArcGIS REST.
+Pro webové mapové služby existují různé __standardy komunikace__. Nerozšířenějším je tzv. __WMS__ (Web Map Service) vyvinutý mezinárodní standardizační organizací Open Geospatial Consortium (OGC). Stadard je otevřený a snadno použitelný. Kromě WMS existuje např. také proprietární standard společnosti Esri (provozovatel platformy ArcGIS Online) – tzv. __ArcGIS REST__.
 
 ## Geoportály
 
 Geoportály jsou webové platformy, které poskytují přístup k geografickým datům a službám. Slouží jako centrální bod pro vyhledávání, prohlížení a stahování prostorových informací, jako jsou mapy, letecké snímky, katastrální data nebo údaje o životním prostředí. Mohou představovat cenný zdroj dat pro analýzu a plánování projektů. Lze zde například využít data o reliéfu terénu, dopravní infrastruktuře nebo vlastnických vztazích k pozemkům. Geoportály často nabízejí i nástroje pro prostorovou analýzu a vizualizaci dat, což může pomoci lépe porozumět kontextu projektů.<br>Geoportály v širším slova smyslu představují také důležitý nástroj v územním plánování a správě měst. Umožňují veřejnosti i odborníkům přístup k aktuálním a relevantním informacím o daném území. Uživatelé mohou využít geoportály k získání podkladů pro své projekty, ale také k prezentaci svých návrhů veřejnosti. Díky geoportálům se stává územní plánování transparentnější a efektivnější, což přispívá k lepšímu rozvoji měst a regionů.
-{style="color:grey;"}
 
 __Tipy na některé zajímavé geoportály:__
 
@@ -55,7 +54,6 @@ __Tipy na některé zajímavé geoportály:__
 ## ArcGIS Online
 
 ArcGIS Online je cloudová platforma pro geografické informační systémy od společnosti Esri. Umožňuje uživatelům vytvářet, sdílet a analyzovat mapy a geografická data prostřednictvím webového prohlížeče. ArcGIS Online představuje cenný nástroj pro vizualizaci a analýzu prostorových dat, jako mohou být urbanistické plány, dopravní sítě, demografické údaje nebo informace o životním prostředí. Platforma nabízí širokou škálu nástrojů pro tvorbu interaktivních map, 3D modelů a webových aplikací, které mohou být využity při plánování a prezentaci projektů. <br>Díky ArcGIS Online mohou uživatelé snadno integrovat různé zdroje dat, provádět prostorové analýzy a vytvářet vizuálně atraktivní prezentace svých návrhů. Platforma také podporuje spolupráci a sdílení dat mezi uživateli, což umožňuje studentům a pedagogům efektivněji pracovat na společných projektech. ArcGIS Online je tak vhodným nástrojem pro moderní geografické vzdělávání, který studentům umožňuje rozvíjet dovednosti v oblasti prostorové analýzy a vizualizace.
-{style="color:grey;"}
 
 ## Atributy geoprostorových dat
 
@@ -86,7 +84,7 @@ style="border: .05rem solid #ededed; border-radius: .1rem;"-->
 Je dán __bod o zeměpisných souřadnicích__ dle individuálního zadání (viz níže).
 
 ??? task-fg-color "Individuální zadání"
-
+    - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363759){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=0&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
@@ -94,9 +92,9 @@ S využitím __mapové prohlížečky ArcGIS Online__, __mapových služeb__ či
 
 1. __příslušnost k obci__ a v jakém __katastrálním území__ bod leží
 
-    - využijte vrstev __:material-layers: Obec__{.bg} a __:material-layers: KatastralniUzemi__{.bg} z [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN).
+    - využijte vrstev __:material-layers: Obec__{.bg} a __:material-layers: KatastralniUzemi__{.bg} z [__Geoprohlížeče ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN). __(4)__{title="zadání souřadnic bodu v Geoprohlížeči ČÚZK"}
     - jako odpověď uveďte přesný __název obce__{.outlined} a __název a číslo katastrálního území__{.outlined}
-
+          
 ---
 
 2. __geologické podloží__ pod zadaným bodem
@@ -108,7 +106,7 @@ S využitím __mapové prohlížečky ArcGIS Online__, __mapových služeb__ či
 
 3. adresu nejbližšího __adresního bodu__
 
-    - využijte vrstvy __:material-layers: AdresniMisto__{.bg} z [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN).
+    - využijte vrstvy __:material-layers: AdresniMisto__{.bg} z [__Geoprohlížeče ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN).
     - jako odpověď uveďte __přesnou adresu__{.outlined} (z atributu)
 
 ---
@@ -203,6 +201,7 @@ __Dále vytvořte a vyexportujte mapové kompozice:__
 1.  ![](../assets/cviceni03/map_01.png){ .no-filter width=700px} vytvořeno nástrojem Print v ArcGIS Online
 2.  ![](../assets/cviceni03/map_02.png){ .no-filter width=700px} vytvořeno nástrojem Print v ArcGIS Online
 3.  ![](../assets/cviceni03/CLC_legenda.png){ .no-filter width=900px} legenda k datům Corine Land Cover
+4.  ![](../assets/cviceni03/GeoprohlizecCUZK_coord.png){ .no-filter width=600px} zadání souřadnic bodu v Geoprohlížeči ČÚZK
 
 ---
 
@@ -216,7 +215,9 @@ a __příslušné datové vrstvy__. Vrstvy prolněte __pomocí nástrojů průhl
 
 ## Výstupy cvičení
 
-Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.outlined} odevzdaná v termínu prostřednictvím systému __Moodle__.
+Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.outlined} odevzdaná v termínu prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=363757){.color_def .underlined_dotted .external_link_icon target="_blank"}.
+
+Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
 
 ??? task-fg-color "Výstup cvičení: Technická zpráva (ukázka)"
 
@@ -230,7 +231,7 @@ Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.ou
 Úloha je uznána, pokud technická zpráva obsahuje __všechny požadované náležitosti__ (viz níže) a má __správný formát__ (PDF).
 
 ???+ note-grey "Požadované náležitosti technické zprávy"
-    - Formát odevzdání __:material-file: PDF__, název souboru __U4-Prijmeni-Jmeno.pdf__{.no-dec .outlined}, případně __U4-Prijmeni-Jmeno-oprava01.pdf__{.no-dec .outlined}
+    - Formát odevzdání __:material-file: PDF__, název souboru __U4_Prijmeni_Jmeno.pdf__{.no-dec .outlined}, případně __U4_Prijmeni_Jmeno_oprava01.pdf__{.no-dec .outlined}
     - Rozpiska se __jménem__, __názvem úlohy__, __individuálním číslem zadání__ a __souřadnicemi zadaného bodu__
     - __Odpovědi__ na všechny otázky v zadání úlohy __včetně zdrojů__ – __jako zdroj nelze uvést pouze "ArcGIS Online" – tato služba je pouze prohlížečka, uvedení jako zdroj proto nedává smysl. Zdrojem získaných informací jsou konkrétní datové vrstvy – na ty lze odkazovat jejich přesným názvem a URL adresou služby.__{style="color:#c22521;" .icon-exclm .no-dec}
     - __Grafické přílohy__ dle zadání (podúlohy __9__{.no-dec .outlined} a __10__{.no-dec .outlined} )
@@ -238,7 +239,7 @@ Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.ou
 
 ### Opravy
 
-V případě, že odevzdaný výstup není správný, je vyučujícím emailem __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze odevzdat po __maximálně dvou opravách__, v případě pozdního odevzdání či nesprávného výstupu po druhé opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
+V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
 [Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
 {align=center}
