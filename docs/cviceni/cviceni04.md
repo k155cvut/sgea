@@ -29,14 +29,85 @@ title: Cvičení 4
 
 <hr class="level-1">
 
-## Princip webových mapových služeb
+## Prostorová data
+Prostorová data (geodata) jsou data, která obsahují informaci o konkrétní geografické poloze objektů na Zemi. Poloha může být přímo (souřadnice objektu) či nepřímo (např. adresou). Informace o poloze obvykle bývá doplněna o informaci vlastnostech *(atributech)* objektu, která jsou uložena v atributové tabulce. Dva nejběžnější datové formáty používané k ukládání (geo)prostorových dat jsou vektorové (body, linie, plochy) a rastrové (satelitní snímky, digitální modely terénu).
 
-Webové mapové služby jsou __webové nástroje poskytující geoprostorová data__ ze serveru na klienta __prostřednictvím internetu__. Klientem je (zjednodušeně) zařízení uživatele vysílající požadavek pro získání dat ze serveru. V praxi se většinou __klient služby dotazuje pomocí GIS aplikace__ (webové či desktopové), která na pozadí posílá serveru požadavky a následně zobrazuje přijatá data (viz obrázek). Díky vazbě dat na souřadnicový systém lze takto __kombinovat data s různými rozsahy a z různých zdrojů v jednom mapovém okně__ a data se zobrazí polohově správně.
+???+ note-fg-color "Atributy (geo)prostorových dat"
+
+    Podstatnou částí geoprostorových dat jsou atributy. Jedná se o __doplňkové informace přiřazené ke každému prvku__ a uspořádané ve formě tzv. __atributové tabulky__. Sloupce této tabulky jsou tzv. __:octicons-columns-16: atributy__, řádky jsou tzv. __:octicons-rows-16: záznamy__. Každý atribut má svůj název a datový typ (např. celé číslo, des. číslo, text, datum). V záznamu nemusí být nutně vyplněny všechny atributy (záleží na nastavení databáze).
+
+    ![](../assets/cviceni03/img02.png){width=50% .no-filter}
+    {align="center"}
+
+    Zobrazování atributů konkrétního prvku probíhá nejčastěji formou tzv. __vyskakovacího okna__ (pop-up window). Tento prvek uživatelského rozhraní se __objeví po kliknutí na prvek v mapě__ a ve výchozím stavu zobrazuje __tabulku s atributy pro daný prvek__.  Atributy se v geomatice používají pro __filtrování prvků__ (zobrazení/skrytí) nebo __řízení symbologie__ (např. obarvení budov podle počtu podlaží).
+
+    ![](../assets/cviceni03/img03.png){width=50% .no-filter}
+    {align="center"}
+
+    <figcaption>vyskakovací okno (po kliknutí na prvek)</figcaption>
+
+ 
+
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://experience.arcgis.com/experience/0d0ade6e797e419d8e73fd28b8704c5a"></iframe>
+
+<!--![](https://dummyimage.com/600x350/bde0ff/0065bd&text=atributová+tabulka+ve+spojení+s+geometrií)
+style="border: .05rem solid #ededed; border-radius: .1rem;"-->
+
+???+ note-fg-color "Vektorová vs. rastrová data"
+    <div class="grid cards" markdown>
+
+    -   :material-vector-polyline:{ .lg .middle } __Vektorová data__
+
+        ---
+
+        Reprezentují prvky reálného světa pomocí základních geometrických elementů: __bodů, linií a ploch__ (tzv. polygonů)
+
+        Podrobnost dat je určena __podrobností souřadnic vrcholů__ geometrického prvku
+
+        Vhodné pro modelování a analýzu __diskrétních objektů__ (např. poloha bodů, kategorie pokrytí půdy)
+
+        Vhodné pro __tvorbu map, měření délek, geometrické výpočty__
+
+        Možné problémy s __topologií__ (mezery a překryvy)
+
+        Základními formáty vektorových dat jsou __Esri Shapefile, GeoJSON, GeoPackage__ či __KML/GML__
+
+
+    -   :material-grid:{ .lg .middle } __Rastrová data__
+
+        ---
+
+        Reprezentují prvky reálného světa v podobě pravidelné mřížky tvořené tzv. __pixely__ (z angl. *picture element*)
+
+        Podrobnost dat je určena __prostorovým rozlišením__ rastru, tj. __velikostí__ hrany __pixelu__ (v metrech)
+
+        Vhodné pro modelování a analýzu __spojitých jevů__ (nadmořská výška, teplota, srážky)
+        
+        Využívané pro __obrazová data__ (např. satelitní snímky)
+
+        Nevýhodou velikost souborových dat
+
+        Základními formáty rastrových dat jsou __GeoTIFF, JPEG, PNG__ či __GIF__
+
+    </div>
+
+    <figure markdown>
+    ![Rozdíl v grafické reprezentaci vektorových a rastrových dat](../assets/cviceni03/VectorVsRaster.png "Rozdíl v grafické reprezentaci vektorových a rastrových dat"){ width=400px }
+    <figcaption>Rozdíl v grafické reprezentaci vektorových a rastrových dat (Geletič et al. 2019)</figcaption>
+    </figure>
+
+<hr class="level-1">
+
+## Mapové služby
+
+Mapové služby jsou __webové nástroje poskytující geoprostorová data__ ze serveru na klienta __prostřednictvím internetu__. Klientem je (zjednodušeně) zařízení uživatele vysílající požadavek pro získání dat ze serveru. V praxi se většinou __klient služby dotazuje pomocí GIS aplikace__ (webové či desktopové), která na pozadí posílá serveru požadavky a následně zobrazuje přijatá data (viz obrázek). Díky vazbě dat na souřadnicový systém lze takto __kombinovat data s různými rozsahy a z různých zdrojů v jednom mapovém okně__ a data se zobrazí polohově správně.
 
 ![](../assets/cviceni03/img01.svg){ .no-filter width=700px}
 {align=center}
 
-Pro webové mapové služby existují různé __standardy komunikace__. Nerozšířenějším je tzv. __WMS__ (Web Map Service) vyvinutý mezinárodní standardizační organizací Open Geospatial Consortium (OGC). Stadard je otevřený a snadno použitelný. Kromě WMS existuje např. také proprietární standard společnosti Esri (provozovatel platformy ArcGIS Online) – tzv. __ArcGIS REST__.
+Pro mapové služby existují různé __standardy komunikace__:
+
+- __WMS(Web Map Service)__ vyvinutý mezinárodní standardizační organizací Open Geospatial Consortium (OGC). Standard je otevřený a snadno použitelný. Kromě WMS existuje např. také proprietární standard společnosti Esri (provozovatel platformy ArcGIS Online) – tzv. __ArcGIS REST__.
 
 ## Geoportály
 
@@ -55,27 +126,6 @@ __Tipy na některé zajímavé geoportály:__
 
 ArcGIS Online je cloudová platforma pro geografické informační systémy od společnosti Esri. Umožňuje uživatelům vytvářet, sdílet a analyzovat mapy a geografická data prostřednictvím webového prohlížeče. ArcGIS Online představuje cenný nástroj pro vizualizaci a analýzu prostorových dat, jako mohou být urbanistické plány, dopravní sítě, demografické údaje nebo informace o životním prostředí. Platforma nabízí širokou škálu nástrojů pro tvorbu interaktivních map, 3D modelů a webových aplikací, které mohou být využity při plánování a prezentaci projektů. <br>Díky ArcGIS Online mohou uživatelé snadno integrovat různé zdroje dat, provádět prostorové analýzy a vytvářet vizuálně atraktivní prezentace svých návrhů. Platforma také podporuje spolupráci a sdílení dat mezi uživateli, což umožňuje studentům a pedagogům efektivněji pracovat na společných projektech. ArcGIS Online je tak vhodným nástrojem pro moderní geografické vzdělávání, který studentům umožňuje rozvíjet dovednosti v oblasti prostorové analýzy a vizualizace.
 
-## Atributy geoprostorových dat
-
-Podstatnou částí geoprostorových dat jsou atributy. Jedná se o __doplňkové informace přiřazené ke každému prvku__ a uspořádané ve formě tzv. __atributové tabulky__. Sloupce této tabulky jsou tzv. __:octicons-columns-16: atributy__, řádky jsou tzv. __:octicons-rows-16: záznamy__. Každý atribut má svůj název a datový typ (např. celé číslo, des. číslo, text, datum). V záznamu nemusí být nutně vyplněny všechny atributy (záleží na nastavení databáze).
-
-![](../assets/cviceni03/img02.png){width=50% .no-filter}
-{align="center"}
-
-Zobrazování atributů konkrétního prvku probíhá nejčastěji formou tzv. __vyskakovacího okna__ (pop-up window). Tento prvek uživatelského rozhraní se __objeví po kliknutí na prvek v mapě__ a ve výchozím stavu zobrazuje __tabulku s atributy pro daný prvek__.
-
-![](../assets/cviceni03/img03.png){width=50% .no-filter}
-{align="center"}
-<figcaption>vyskakovací okno (po kliknutí na prvek)</figcaption>
-
-Atributy se v geomatice používají pro __filtrování prvků__ (zobrazení/skrytí) nebo __řízení symbologie__ (např. obarvení budov podle počtu podlaží).
-
-???+ task-fg-color "Příklad: Atributová tabulka a vyskakovací okna"
-
-    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://experience.arcgis.com/experience/0d0ade6e797e419d8e73fd28b8704c5a"></iframe>
-
-<!--![](https://dummyimage.com/600x350/bde0ff/0065bd&text=atributová+tabulka+ve+spojení+s+geometrií)
-style="border: .05rem solid #ededed; border-radius: .1rem;"-->
 
 <hr class="level-1">
 
@@ -89,10 +139,11 @@ Je dán __bod o zeměpisných souřadnicích__ dle individuálního zadání (vi
 
 
 S využitím __mapové prohlížečky ArcGIS Online__, __mapových služeb__ či __geoportálů__ o zadaném bodu zjistěte:
-
+<div class="annotate" markdown>
 1. __příslušnost k obci__ a v jakém __katastrálním území__ bod leží
 
-    - využijte vrstev __:material-layers: Obec__{.bg} a __:material-layers: KatastralniUzemi__{.bg} z [__Geoprohlížeče ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN). __(4)__{title="zadání souřadnic bodu v Geoprohlížeči ČÚZK"}
+    - využijte vrstev __:material-layers: Obec__{.bg} a __:material-layers: KatastralniUzemi__{.bg} z [__Geoprohlížeče ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/ "Produkty → RUIAN"){.color_def .underlined_dotted .external_link_icon target="_blank"} (prohlížecí služba databáze RÚIAN). __(4)__{title="zadání souřadnic bodu"}
+    
     - jako odpověď uveďte přesný __název obce__{.outlined} a __název a číslo katastrálního území__{.outlined}
           
 ---
@@ -184,7 +235,7 @@ zde zajimava informace o WMS: https://community.esri.com/t5/arcgis-api-for-silve
 __Dále vytvořte a vyexportujte mapové kompozice:__
 
 <!-- div je zde kvuli anotacim -->
-<div class="annotate" markdown>
+
 9. využití území dle __:material-layers: CORINE Land Cover 2018__{.bg} __(3)__{title="legenda Corine Land Cover"} nad __:material-layers: Základní topografickou mapou__{.bg}, __měřítko volte 1 : 10 000, formát A4 landscape__ __(1)__{title="ukázka řešení"}
 
     - Základní topografická mapa je k dispozici např. na [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/ "Služby → Prohlížecí → Esri ArcGIS Server (nebo WMS)"){.color_def .underlined_dotted .external_link_icon target="_blank"}
