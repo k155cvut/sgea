@@ -246,14 +246,14 @@ __Dále vytvořte a vyexportujte mapové kompozice:__
 
 <!-- div je zde kvuli anotacim -->
 
-9. využití území dle __:material-layers: CORINE Land Cover 2018__{.bg} __(3)__{title="legenda Corine Land Cover"} nad __:material-layers: Základní topografickou mapou__{.bg}, __měřítko volte 1 : 10 000, formát A4 landscape__ __(1)__{title="ukázka řešení"}
+9. využití území dle __:material-layers: CORINE Land Cover 2018__{.bg} __(3)__{title="legenda Corine Land Cover"} nad __:material-layers: Základní topografickou mapou__{.bg} __(7)__{title="přidejte ZTM jako podkladovou mapu"}, __měřítko volte 1 : 10 000, formát A4 landscape__ __(1)__{title="ukázka řešení"}
 
     - Základní topografická mapa je k dispozici např. na [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/ "Služby → Prohlížecí → Esri ArcGIS Server (nebo WMS)"){.color_def .underlined_dotted .external_link_icon target="_blank"}
     - výchozí podkladová mapa ArcGIS Online __není součástí správného výsledku__{.primary_color}. Pro správný výsledek je nutné podkladovou mapu změnit na oficiální „Základní topografickou mapu“ od Zeměměřického úřadu.
 
 ---
 
-10. nejbližšího __maloplošného chráněného území__{.underlined_dotted title="přír. památka, přír. rezervace, nár. přír. památka, nár. přír. rezervace"} přírody (nikoli okolí Vašeho bodu, ale okolí chráněného území) <!--__s popiskem__{.primary_color}--> nad __:material-layers: Základní topografickou mapou__{.bg} , __měřítko kompozice a orientaci papíru A4 volte tak, aby se dané chráněné území optimálně vešlo__ __(2)__{title="ukázka řešení"}
+10. nejbližšího __maloplošného chráněného území__{.underlined_dotted title="přír. památka, přír. rezervace, nár. přír. památka, nár. přír. rezervace"} přírody (nikoli okolí Vašeho bodu, ale okolí chráněného území) <!--__s popiskem__{.primary_color}--> nad __:material-layers: Základní topografickou mapou__{.bg} __(8)__{title="přidejte ZTM jako podkladovou mapu"}, __měřítko kompozice a orientaci papíru A4 volte tak, aby se dané chráněné území optimálně vešlo__ __(2)__{title="ukázka řešení"}
 
     - využijte vrstvu z [__Geoportálu Agentury ochrany přírody a krajiny ČR__](https://gis-aopkcr.opendata.arcgis.com/){.color_def .underlined_dotted .external_link_icon target="_blank"} (AOPK)
     - výchozí podkladová mapa ArcGIS Online __není součástí správného výsledku__{.primary_color}. Pro správný výsledek je nutné podkladovou mapu změnit na oficiální „Základní topografickou mapu“ od Zeměměřického úřadu.
@@ -265,6 +265,8 @@ __Dále vytvořte a vyexportujte mapové kompozice:__
 4.  ![](../assets/cviceni03/GeoprohlizecCUZK_coord.png){ .no-filter width=600px} zadání souřadnic bodu v Geoprohlížeči ČÚZK
 5.  ![](../assets/cviceni03/filter.png){ .no-filter width=700px} funkce pro filtrování dat 
 6.  ![](../assets/cviceni03/filtr_posty.png){ .no-filter width=700px} nastavení filtru
+7.  ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} nastavení ZTM jako podkladové mapy
+8.  ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} nastavení ZTM jako podkladové mapy
 
 
 ---
