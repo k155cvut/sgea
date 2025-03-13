@@ -116,7 +116,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 <!-- NEFUNGUJE MI TA ZMENA PROJEKCE, U TETO VRSTVY TO TREBA FUNGUJE: geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer -->
 
-- Vrstvám s klasifikací budov __nastavte exkluzivní viditelnost__{.primary_color .underlined_dotted title="funguje pouze na seskupené vrstvy"}, aby byla při přepínání viditelná vždy pouze jedna z nich. Zachovejte viditelnost vrstvy s obvodem obce, __ostatní vrstvy z mapy odstraňte__{.primary_color}.__(8)__{title="ukázka"}
+- Vrstvám s klasifikací budov __nastavte exkluzivní viditelnost__{.primary_color .underlined_dotted title="funguje pouze na seskupené vrstvy"}, aby byla při přepínání viditelná vždy pouze jedna z nich. __(8)__{title="ukázka"} Zachovejte viditelnost vrstvy s obvodem obce, __ostatní vrstvy z mapy odstraňte__{.primary_color}. 
 
 - __Webovou mapu uložte__ s názvem "Jmeno_Prijmeni_SGEA2025" a __nastavte sdílení v rámci oganizace__{.primary_color} nebo __veřejné__{.primary_color}.
 
@@ -184,7 +184,9 @@ Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextov�
 
 ## Výstupy cvičení
 
-Povinnými výstupy úlohy jsou dvě __webové mapy__{.outlined}. Webová mapa je po uložení a nastavení sdílení přístupná přes __URL adresu__, kterou je nutné odeslat vyučujícímu. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
+Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webová mapa je po uložení v prostředí ArcGIS Online a nastavení vhodné úrovně sdílení přístupná přes __URL adresu__, kterou je nutné odeslat vyučujícímu. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
+
+Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
 
 Úloha je uznána, pokud webové mapy obsahují __všechny požadované náležitosti__ (viz níže).
 
@@ -201,12 +203,13 @@ Povinnými výstupy úlohy jsou dvě __webové mapy__{.outlined}. Webová mapa j
 
 ### Opravy
 
-V případě, že odevzdaný výstup není správný, je vyučujícím emailem __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze opravit __maximálně jednou__, v případě pozdního odevzdání či nesprávného výstupu po provedené opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
+V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
 [Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
 {align=center}
 
 <br><br><br><br><br>
+
 
 <!--
 <style>
