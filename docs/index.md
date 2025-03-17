@@ -71,8 +71,8 @@ __prof. Ing. Jiří Cajthaml, Ph.D. [:fontawesome-solid-square-envelope:](mailto
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-3. __GIS__: základní pojmy GIS, vektorová a rastrová data, topologie, atributová data, webové mapové služby, zdroje dat (OSM, RÚIAN, WMS), geoprostorové analýzy, 3D GIS, cloudové řešení ArcGIS Online. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
-4. __Kartografie__: základní pojmy v kartografii, znakový klíč a jazyk mapy, polohopis, výškopis, popis, kartografická generalizace, státní mapové dílo středního měřítka (civilní i vojenské), tematická kartografie, webová kartografie. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
+4. __GIS__: základní pojmy GIS, vektorová a rastrová data, topologie, atributová data, webové mapové služby, zdroje dat (OSM, RÚIAN, WMS), geoprostorové analýzy, 3D GIS, cloudové řešení ArcGIS Online. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
+5. __Kartografie__: základní pojmy v kartografii, znakový klíč a jazyk mapy, polohopis, výškopis, popis, kartografická generalizace, státní mapové dílo středního měřítka (civilní i vojenské), tematická kartografie, webová kartografie. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
 
 Ostatní přednášky zajišťuje Katedra speciální geodézie (K154).
 
@@ -108,9 +108,9 @@ __Ing. Vojtěch Cehák [:fontawesome-solid-square-envelope:](mailto:vojtech.ceha
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-3. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadaném místě. Jde o informace administrativního charakteru (např. katastrální území), ale i přírodích poměrů (např. nadmořská výška či chráněná území v okolí). Výstupem cvičení je technická zpráva.
+4. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadaném místě. Jde o informace administrativního charakteru (např. katastrální území), ale i přírodích poměrů (např. nadmořská výška či chráněná území v okolí). Výstupem cvičení je technická zpráva.
 
-4. __Tvorba webové mapy, export dat:__ Pomocí základní překryvné analýzy a změny symbologie upravíme data tak, aby vznikla efektní webová mapa s vlastním obsahem. Na závěr data importujeme do CAD software a vytvoříme z nich základní výkres. Výstupem cvičení je webová mapa a CAD výkres.
+5. __Tvorba webové mapy, export dat:__ Pomocí základní překryvné analýzy a změny symbologie upravíme data tak, aby vznikla efektní webová mapa s vlastním obsahem. Na závěr data importujeme do CAD software a vytvoříme z nich základní výkres. Výstupem cvičení je webová mapa a CAD výkres.
 
 Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 

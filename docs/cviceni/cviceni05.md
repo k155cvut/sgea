@@ -28,22 +28,22 @@ title: Cvičení 5
 </div>
 
 <hr class="level-1">
-
-## Základní topografická mapa a ZABAGED
-
-**Základní topografická mapa ČR (ZTM ČR)**
-
+<!--
+## Základní topografická mapa a ZABAGED-->
+<!--
+**Základní topografická mapa ČR (ZTM ČR)**-->
+<!--
 Základní topografické mapy ČR představují soubor mapových děl, které poskytují podrobné a aktuální informace o území České republiky. Jedná se o nejpodrobnější obecně topografické mapové dílo České republiky. Mapy jsou vytvářeny v měřítcích od 1 : 5000 po 1 : 200 000, s přehlednými mapami o půlmilionovém a milionovém měřítku) a slouží jako základní zdroj geografických dat pro široké spektrum uživatelů, včetně veřejné správy, odborníků i veřejnosti.<br>
 ZTM ČR se vytváří digitální technologií z kartografické databáze, která je aktualizována na základě Základní báze geografických dat České republiky (ZABAGED) a databáze geografických jmen České republiky Geonames. Mapy obsahují informace o terénu, vodstvu, sídelní struktuře, dopravní síti, vegetaci a dalších prvcích krajiny.
-{style="color:grey;"}
+{style="color:grey;"}-->
 
-**ZABAGED (Základní báze geografických dat České republiky)**
+<!--**ZABAGED (Základní báze geografických dat České republiky)**
 
 ZABAGED je vektorový geografický digitální model území České republiky, který spravuje Zeměměřický úřad. Tato databáze obsahuje podrobné a aktuální informace o polohopisu, výškopisu a dalších geografických prvcích území ČR, v měřítku odpovídajícím minimálně referenční hodnotě 5000, mnohdy ale v úrovni podrobnější. ZABAGED je základním zdrojem dat pro tvorbu ZTM ČR a dalších geografických informačních systémů.<br>
 ZABAGED představuje důležitý zdroj dat pro analýzu území, tvorbu map a 3D modelů či vizualizací. Je využívána jako základní informační vrstva v územně orientovaných informačních a řídících systémech veřejné správy ČR.
 {style="color:grey;"}
 
-<hr class="level-1">
+<hr class="level-1"> -->
 
 ## Zadání úlohy
 
@@ -53,15 +53,15 @@ Pomocí mapových služeb od ČÚZK vytvořte __dvojici webových map__ dle indi
 **Mapa II** bude zobrazovat v zadané ORP __rekreační potenciál__ pomocí metody intenzity jevu (heat map).
 
 ??? task-fg-color "Individuální zadání"
-
+    - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363763){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1732083778&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
-## Mapa I – Pracovní postup
+## Mapa I – pracovní postup
 
 <div class="annotate" markdown>
 
-- Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers-triple: SGEA_obce_2024__{.bg}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
+- Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers-triple: SGEA_obce_2025__{.bg}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
 
 - Vrstvě __nastavte :material-filter: filtr dle kódu__ (v krajním případě dle názvu) __zadané obce__. Filtr omezí zobrazení prvků pouze na jednu zadanou obec.__(2)__{title="ukázka"}
 
