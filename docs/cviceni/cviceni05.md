@@ -118,9 +118,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Vrstvám s klasifikací budov __nastavte exkluzivní viditelnost__{.primary_color .underlined_dotted title="funguje pouze na seskupené vrstvy"}, aby byla při přepínání viditelná vždy pouze jedna z nich. __(8)__{title="ukázka"} Zachovejte viditelnost vrstvy s obvodem obce, __ostatní vrstvy z mapy odstraňte__{.primary_color}. 
 
-- __Webovou mapu uložte__ s názvem "Jmeno_Prijmeni_SGEA2025" a __nastavte sdílení v rámci oganizace__{.primary_color} nebo __veřejné__{.primary_color}.
-
-- Vyučujícímu odevzdejte __URL adresu webové mapy__.__(9)__
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa1** a __nastavte sdílení v rámci oganizace__{.primary_color}.
 
 ???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
 
@@ -165,7 +163,29 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 Do prázdné mapy na ArcGIS Online přidejte vrstvu *budov individuální a hromadné rekreace* __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu ***stavba pro rodinnou rekreaci*** (`Způsob využití = 8`) nebo ***stavba ubytovacího zařízení*** (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2024__{.bg} na ArcGIS Online.<br>
 
-Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextovém menu vrstvy).
+- Pomocí aplikace filtru nad vrstvou (podobně jako u pošt v minulé úloze) nastavíme obcím podmínku typu `Nadřazená ORP = 833`. Kód ORP lze zjistit z atributové tabulky obcí.__(10)__{title="zjištění kódu ORP"}.
+
+- __Prostorovou analýzou__ (nástroj __:material-tools: Manage Data > Dissolve Boundaries__{.bg}) opět vytvoříme novou vrstvu, tentokrát obce shlukneme do plochy zadané ORP stavebních objektů pouze na území zadané obce.__(11)__{title="nastavení parametrů nástroje"}. Tentokrát nemusíme řešit zoom mapového okna a nastavení v Environments, protože počet zpracovaných obcí je již omezen filtrem. Výsledkem této analýzy získáme oblast, ve které budeme zobrazovat rekreační potenciál. V nastavení stylu jí můžeme definovat širší okraj, aby byl rozsah ORP výrazný. 
+
+- Nyní přejdeme k bodové vrstvě rekreačních budov. Opět pomocí (nástroje __:material-tools: Manage Data > Overlay Layers__{.bg}) vytvoříme novou vrstvu, která bude obsahovat jen body v zadané ORP. Zde je opět vhodné nastavit zoom okna na plochu ORP, aby se snížila cena výpočtu, případně, což je lepší, můžete jako *Processing extent* nastavit *Layer* a zde vybrat výše vypočtenou plochu ORP.__(12)__{title="výběr ORP jako oblasti výpočtu"}
+  
+- Pomocí stylů nastavte nově vypočtené vrstvě rekreačních budov __symboliku na typ Heat Map__. Lze nastavit dosah vlivu jednotlivých bodů (*Area of inluence*), případně si pohrát s barevnou stupnicí a úrovní její průhlednosti.
+
+<figure markdown>
+![](../assets/cviceni04/Heat-map.png){width=700px}
+{align=center}
+<figcaption>tvorba mapy formou metody intenzity jevu (heat-map)</figcaption></figure>
+
+Mapu doplňte **podkladovou mapou – Základní topografickou mapou ČR**, u které snížíte intenzitu nastavením průhlednosti, dále rozsahem ORP a méně výrazně hranicemi jednotlivých obcí. 
+Polygony obcí doplňte popisem (*Labels / Add label class* v menu napravo pro vrstvu obcí).
+Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nastavte jako zobrazené vrstvy ve vyskakovacím okně jen název, kód obce a počet obyvatel. Naopak pomocí tlačítka *Add content > Chart* přidejte sloupcový graf, který bude vykreslovat výstavbu domů v obci – tu převezměte z atributů *Výstavba domů před 1919*, *Výstavba domů 1920–1949*, ... až po *Výstavba domů po 2016* (v tomto pořadí). 
+
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__{.primary_color}.
+
+<figure markdown>
+![](../assets/cviceni04/ukazka_mapaII.png){width=700px}
+{align=center}
+<figcaption>ukázka celkového výsledku</figcaption></figure>
 
 </div> <!-- pro anotace -->
 
@@ -178,13 +198,16 @@ Polygony obcí doplňte popisem (*Enable Labels / Configure Labels* v kontextov�
 7.  ![](../assets/cviceni04/img07.png){ .no-filter width=700px} změna podkladové mapy (Základní topografická mapa)
 8.  ![](../assets/cviceni04/img08.png){ .no-filter width=700px} exkluzivní viditelnost skupiny vrstev v legendě
 9.  __Příklad odevzdaného odkazu:__<br>https://ctuprague.maps.arcgis.com/apps/mapviewer/index.html?webmap=21df15ae2ca9458794a16a8fd9078b78
+10. ![](../assets/cviceni04/zjisteni_kodu_ORP.png){ .no-filter width=700px} zjištění kódu ORP
+11. ![](../assets/cviceni04/parametry_Dissolve.png){ .no-filter width=700px} parametry nástroje Dissolve boundaries
+12. ![](../assets/cviceni04/processing_extent_jako_vrstva.png){ .no-filter width=700px} nastavení ORP jako Processing extent
 
 
 <hr class="level-1">
 
 ## Výstupy cvičení
 
-Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webová mapa je po uložení v prostředí ArcGIS Online a nastavení vhodné úrovně sdílení přístupná přes __URL adresu__, kterou je nutné odeslat vyučujícímu. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
+Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webové mapy uložte pod požadovanými názvy a nastavte úroveň sdílení. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
 
 Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
 
@@ -193,12 +216,13 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
 ???+ note-grey "Požadované náležitosti odevzdaných výstupů"
     __Webová mapa__
 
-    - vrstva se stavebními objekty __omezena hranicí obce__, naopak žádné __stavební objekty nesmí chybět__
-    - __legenda se slovními popisy__ (nikoli s číselnými kódy)
-    - kategorie typu "nedefinováno", "nezjištěno" apod. neutrální __šedou barvou__
-    - podkladová mapa – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__
-    - na vrstvy rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně)
-    - sdílení webové mapy nastaveno __"v rámci organizace"__ či __"veřejně"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
+    - vrstva se stavebními objekty __omezena hranicí obce__, naopak žádné __stavební objekty nesmí chybět__,
+    - __legenda se slovními popisy__ (nikoli s číselnými kódy),
+    - kategorie typu "nedefinováno", "nezjištěno" apod. neutrální __šedou barvou__, případně sloučené dohromady jako "není informace" apod.,
+    - podkladová mapa – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
+    - na vrstvy rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně),
+    - vrstvy u mapy II vhodně přejmenované,
+    - sdílení webové mapy nastaveno __"v rámci organizace"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
 
 
 ### Opravy
