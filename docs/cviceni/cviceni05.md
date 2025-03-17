@@ -49,21 +49,22 @@ ZABAGED představuje důležitý zdroj dat pro analýzu území, tvorbu map a 3D
 
 Pomocí mapových služeb od ČÚZK vytvořte __dvojici webových map__ dle individuálního zadání níže. 
 
-**Mapa I** bude obsahovat budovy (stavební objekty) v zadané obci __barevně rozlišené dle připojení na kanalizaci a plyn__.
-**Mapa II** bude zobrazovat v zadané ORP __rekreační potenciál__ pomocí metody intenzity jevu (heat map).
+[**Mapa I**](#mapa-i) bude obsahovat __budovy (stavební objekty) v zadané obci__ __barevně rozlišené dle připojení na kanalizaci a plyn__.
+
+[**Mapa II**](#mapa-ii) bude zobrazovat __rekreační potenciál v zadané [ORP]("obce s rozšířenou působností (ORP) jsou v Česku mezičlánkem přenesené působnosti samosprávy mezi krajskými úřady a ostatními obecními úřady") pomocí metody intenzity jevu (heat map)__.
 
 ??? task-fg-color "Individuální zadání"
     - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363763){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1732083778&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
-## Mapa I – pracovní postup
+## Mapa I
 
 <div class="annotate" markdown>
 
 - Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers-triple: SGEA_obce_2025__{.bg}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
 
-- Vrstvě __nastavte :material-filter: filtr dle kódu__ (v krajním případě dle názvu) __zadané obce__. Filtr omezí zobrazení prvků pouze na jednu zadanou obec.__(2)__{title="ukázka"}
+- S využitím funkce __:material-filter: filtru__ omezte vrstvu obcí pouze na území zadané obce. __Nastavte :material-filter: filtr dle kódu zadané obce__. __(2)__{title="nastavení filtru dle kódu obce"}
 
 - Do mapy dále __přidejte vrstvu__ __:material-layers: RÚIAN__{.bg}, __podvrstvu__ __:material-layers-triple: StavebniObjekt__{.bg} z [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/ "Služby → Prohlížecí → Esri ArcGIS Server (nebo WMS)"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Tato vrstva obsahuje polygony všech stavebních objektů v ČR.__(3)__{title="ukázka"}
 
@@ -120,10 +121,10 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa1** a __nastavte sdílení v rámci oganizace__{.primary_color}.
 
-???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
+<!--???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
 
     <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://experience.arcgis.com/experience/0e6a7769af1d479489af74e2f98ca195"></iframe>
-
+-->
 
 <!--
 
@@ -136,7 +137,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 ---
 
-## Mapa II – pracovní postup
+## Mapa II
 
 <!--
 - ~~Obě vrstvy (stavební objekty i obvod zadané obce) __exportujte do formátu Shapefile__ a __stáhněte na disk počítače__.~~
@@ -161,7 +162,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 -->
 
-Do prázdné mapy na ArcGIS Online přidejte vrstvu *budov individuální a hromadné rekreace* __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu ***stavba pro rodinnou rekreaci*** (`Způsob využití = 8`) nebo ***stavba ubytovacího zařízení*** (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2024__{.bg} na ArcGIS Online.<br>
+Do prázdné mapy na ArcGIS Online přidejte vrstvu *budov individuální a hromadné rekreace* __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu ***stavba pro rodinnou rekreaci*** (`Způsob využití = 8`) nebo ***stavba ubytovacího zařízení*** (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2025__{.bg} na ArcGIS Online.<br>
 
 - Pomocí aplikace filtru nad vrstvou (podobně jako u pošt v minulé úloze) nastavíme obcím podmínku typu `Nadřazená ORP = 833`. Kód ORP lze zjistit z atributové tabulky obcí.__(10)__{title="zjištění kódu ORP"}.
 
@@ -190,7 +191,7 @@ Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nas
 </div> <!-- pro anotace -->
 
 1.  ![](../assets/cviceni04/img01.png){ .no-filter width=700px} vrstva obcí
-2.  ![](../assets/cviceni04/img02.png){ .no-filter width=700px} filtr dle kódu obce
+2.  ![](../assets/cviceni04/obce_vyber.png){ .no-filter width=700px} nastavení filtru dle kódu obce
 3.  ![](../assets/cviceni04/img03.png){ .no-filter width=700px} vrstva "RÚIAN/StavebniObjekt"
 4.  ![](../assets/cviceni04/img04.png){ .no-filter width=200px}<br> parametry nástroje "Overlay Layers"
 5.  ![](../assets/cviceni04/img05.png){ .no-filter width=700px} výsledná vrstva (budovy jsou pouze uvnitř hraice obce)
