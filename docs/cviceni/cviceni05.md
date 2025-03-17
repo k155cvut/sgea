@@ -47,7 +47,7 @@ ZABAGED představuje důležitý zdroj dat pro analýzu území, tvorbu map a 3D
 
 ## Zadání úlohy
 
-Pomocí mapových služeb od ČÚZK vytvořte __dvojici webových map__ dle individuálního zadání níže. 
+V prostředí [__ArcGIS Online__](https://www.arcgis.com/){.color_def .underlined_dotted .external_link_icon target="_blank"} vytvořte __2 webové mapy__ pro zadané území (viz individuální zadání níže): 
 
 [**Mapa I**](#mapa-i) bude obsahovat __budovy (stavební objekty) v zadané obci__ __barevně rozlišené dle připojení na kanalizaci a plyn__.
 
@@ -62,15 +62,14 @@ Pomocí mapových služeb od ČÚZK vytvořte __dvojici webových map__ dle indi
 
 <div class="annotate" markdown>
 
-- Do prázdné mapy v ArcGIS Online __přidejte vrstvu__ __:material-layers-triple: SGEA_obce_2025__{.bg}. Tato vrstva obsahuje polygony území všech obcí v ČR.__(1)__{title="ukázka"}
+- Do prázdné mapy v ArcGIS Online __přidejte polygonovou vrstvu obcí__ [__:material-layers-triple: SGEA_obce_2025__]("Tato vrstva obsahuje polygony území všech obcí v ČR."){.bg .color_def}. __(1)__{title="ukázka polygonové vrstvy obcí"}
 
-- S využitím funkce __:material-filter: filtru__ omezte vrstvu obcí pouze na území zadané obce. __Nastavte :material-filter: filtr dle kódu zadané obce__. __(2)__{title="nastavení filtru dle kódu obce"}
+- S využitím funkce __:material-filter: filtru__ __omezte vrstvu obcí pouze na území zadané obce.__ Nastavte :material-filter: filtr dle kódu zadané obce. __(2)__{title="nastavení filtru dle kódu obce"}
 
-- Do mapy dále __přidejte vrstvu__ __:material-layers: RÚIAN__{.bg}, __podvrstvu__ __:material-layers-triple: StavebniObjekt__{.bg} z [__Geoportálu ČÚZK__](https://geoportal.cuzk.cz/ "Služby → Prohlížecí → Esri ArcGIS Server (nebo WMS)"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Tato vrstva obsahuje polygony všech stavebních objektů v ČR.__(3)__{title="ukázka"}
+- Dále přidejte polygonovou vrstvu [__:material-layers-triple: StavebniObjekt__]("Tato vrstva obsahuje polygony všech stavebních objektů v ČR."){.bg .color_def} z mapové služby __:material-layers: RÚIAN__{.bg} z [__Geoportálu ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/ "Produkty → RÚIAN"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Vrstvě stavebních objektů vhodně nastavte viditelný rozsah, aby bylo možné stavební objekty zobrazit i v menším měřítku (postačí do úrovně měst). __(3)__{title="přidání vrstvy stavebních objektů"}__(13)__{title="nastavení viditelného rozsahu vrstvy"}
 
-- __Prostorovou analýzou__ (nástroj __:material-tools: Overlay Layers__{.bg}) __vytvořte vrstvu stavebních objektů pouze na území zadané obce__.__(4)__{title="nastavení parametrů nástroje"}__(5)__{title="ukázka výsledku"}
-
-    - nastavte mapové okno tak, aby byla __viditelná celá hranice zadané obce__ a *parametr __"Processing Extent"__ nastavte na __"Display Extent"__*{.primary_color .no-dec} (parametr omezí výpočet na rozsah mapového okna, výrazně se tím sníží cena výpočtu)
+- S využitím nástroje __prostorové analýzy__ [__:material-tools: Překrýt vrstvy__]("angl. Overlay Layers"){.bg .color_def} __vytvořte vrstvu stavebních objektů pouze na území zadané obce__.__(4)__{title="nastavení parametrů nástroje překrytí vrstev"}__(5)__{title="ukázka výsledku"}<br>
+    *(Před spuštěním nástroje nastavte mapové okno tak, aby byla __viditelná celá hranice zadané obce__. Následně nastavte parametr __"Nastavení prostředí"__ nastavte na __"Rozsah zobrazení"__ , čímž omezíte výpočet pouze na rozsah mapového okna a výrazně tak snížíte cenu výpočtu)* __(14)__{title="omezení výpočtu dle rozsahu mapového okna"}
 
 - Pomocí stylů __nastavte budovám symbologii dle atributu "Připojení na kanalizační síť"__. Kategorie typu `nedefinováno`, `nezjištěno`, `null`, `žádná hodnota` apod. musí mít nastavenou __neutrální šedou barvu__{.primary_color} (dle kartografických zvyklostí). Barvy výplně zvolte dle citu, volitelně přidejte i barevné ohraničení.__(6)__{title="ukázka"}
 
@@ -190,10 +189,10 @@ Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nas
 
 </div> <!-- pro anotace -->
 
-1.  ![](../assets/cviceni04/img01.png){ .no-filter width=700px} vrstva obcí
+1.  ![](../assets/cviceni04/img01.png){ .no-filter width=700px} polygonová vrstva obcí "SGEA_obce_2025"
 2.  ![](../assets/cviceni04/obce_vyber.png){ .no-filter width=700px} nastavení filtru dle kódu obce
-3.  ![](../assets/cviceni04/img03.png){ .no-filter width=700px} vrstva "RÚIAN/StavebniObjekt"
-4.  ![](../assets/cviceni04/img04.png){ .no-filter width=200px}<br> parametry nástroje "Overlay Layers"
+3.  ![](../assets/cviceni04/RUIAN_all.png){ .no-filter width=700px} vrstva "RÚIAN/StavebniObjekt"
+4.  ![](../assets/cviceni04/overlay.png){ .no-filter width=200px}<br> nastavení parametrů nástroje "Překrýt vrstvy"
 5.  ![](../assets/cviceni04/img05.png){ .no-filter width=700px} výsledná vrstva (budovy jsou pouze uvnitř hraice obce)
 6.  ![](../assets/cviceni04/img06.png){ .no-filter width=700px} změna symbologie (barva výplně a obrysu)
 7.  ![](../assets/cviceni04/img07.png){ .no-filter width=700px} změna podkladové mapy (Základní topografická mapa)
@@ -202,6 +201,8 @@ Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nas
 10. ![](../assets/cviceni04/zjisteni_kodu_ORP.png){ .no-filter width=700px} zjištění kódu ORP
 11. ![](../assets/cviceni04/parametry_Dissolve.png){ .no-filter width=700px} parametry nástroje Dissolve boundaries
 12. ![](../assets/cviceni04/processing_extent_jako_vrstva.png){ .no-filter width=700px} nastavení ORP jako Processing extent
+13. ![](../assets/cviceni04/RUIAN_meritko.png){ .no-filter width=700px} nastavení viditelného rozsahu polygonové vrstvy stavebních objektů
+14. ![](../assets/cviceni04/overlay_rozsah.png){ .no-filter width=700px} omezení výpočtu na rozsah mapového okna
 
 
 <hr class="level-1">
