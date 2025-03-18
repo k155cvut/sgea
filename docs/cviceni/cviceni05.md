@@ -125,8 +125,8 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Proveďte finální úpravu webové mapy:
     - vrstvy klasifikující stavební objekty dle připojení na plyn a kanalizaci seskupte do skupiny *"stavební objekty"* a této skupině __nastavte exkluzivní viditelnost__, aby byla při přepínání viditelná vždy pouze jedna vrstva stavebních objektů __(8)__{title="nastavení exkluzivní viditelnosti skupiny vrstev"}
-    - ve webové mapě zachovejte pouze skupinu vrstev *"stavební objekty"* a vrstvu zobrazující hranice obce (ostatní vrstvy z mapy odstraňte)
-    - všechny vrstvy vhodně pojmenujte
+    - ve webové mapě __zachovejte pouze skupinu vrstev *"stavební objekty"* a vrstvu zobrazující hranice obce__ (ostatní vrstvy z mapy odstraňte)
+    - __všechny vrstvy vhodně pojmenujte__
     - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
 
 - __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa1** a __nastavte sdílení v rámci oganizace__. __(17)__{title="ukázka"}
@@ -209,9 +209,9 @@ __:material-gas-burner: Připojení na rozvod plynu__
 - Jako podkladovou mapu přidejte [__Základní topografickou mapu od Zeměměřického úřadu v souřadnicovém systému S-JTSK__]("v prostředi AGOL odpovídá službě 'Základní topografické mapy ČR (S-JTSK)' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} nebo [__Ortofotomapu ČR (S-JTSK)__]("v prostředi AGOL odpovídá službě 'Ortofotomapa ČR (S-JTSK' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} __(15)__{title="přidání podkladové mapy"}
 
 - Proveďte finální úpravu webové mapy:
-    - ve webové mapě zachovejte pouze vrstvu rekreačních objektův zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
-    - všechny vrstvy vhodně pojmenujte
-    - možnost zobrazit vyskakovací okna ponechte jen u vrstvy obcí, u zbývajících vrstev tuto možnost vypněte
+    - ve webové mapě __zachovejte pouze vrstvu rekreačních objektů v zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP__ (ostatní vrstvy z mapy odstraňte)
+    - __všechny vrstvy vhodně pojmenujte__
+    - možnost __zobrazit vyskakovací okna__ ponechte __jen u vrstvy obcí__, u zbývajících vrstev tuto možnost vypněte
     - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
     - polygonovou vrstvu obcí můžete volitelně doplnit popisem
 
