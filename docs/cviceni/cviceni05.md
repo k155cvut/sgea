@@ -68,12 +68,11 @@ V prostředí [__ArcGIS Online__](https://www.arcgis.com/){.color_def .underline
 
 - Dále přidejte polygonovou vrstvu [__:material-layers-triple: StavebniObjekt__]("Tato vrstva obsahuje polygony všech stavebních objektů v ČR."){.bg .color_def} z mapové služby __:material-layers: RÚIAN__{.bg} z [__Geoportálu ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/ "Produkty → RÚIAN"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Vrstvě stavebních objektů vhodně nastavte viditelný rozsah, aby bylo možné stavební objekty zobrazit i v menším měřítku (postačí do úrovně měst). __(3)__{title="přidání vrstvy stavebních objektů"}__(13)__{title="nastavení viditelného rozsahu vrstvy"}
 
-- S využitím nástroje __prostorové analýzy__ [__:material-tools: Překrýt vrstvy__]("angl. Overlay Layers"){.bg .color_def} __vytvořte vrstvu stavebních objektů pouze na území zadané obce__.__(4)__{title="nastavení parametrů nástroje překrytí vrstev"}__(5)__{title="ukázka výsledku"}<br>
+- S využitím nástroje __prostorové analýzy__ [__:material-tools: Překrýt vrstvy__]("angl. Overlay Layers"){.bg .color_def} __vytvořte vrstvu stavebních objektů pouze na území zadané obce__.__(4)__{title="nastavení parametrů nástroje překrytí vrstev"}__(5)__{title="ukázka výstupu nástroje překrytí vrstev"}<br>
     *(Před spuštěním nástroje nastavte mapové okno tak, aby byla __viditelná celá hranice zadané obce__. Následně nastavte parametr __"Nastavení prostředí"__ nastavte na __"Rozsah zobrazení"__ , čímž omezíte výpočet pouze na rozsah mapového okna a výrazně tak snížíte cenu výpočtu)* __(14)__{title="omezení výpočtu dle rozsahu mapového okna"}
 
-- Pomocí stylů __nastavte budovám symbologii dle atributu "Připojení na kanalizační síť"__. Kategorie typu `nedefinováno`, `nezjištěno`, `null`, `žádná hodnota` apod. musí mít nastavenou __neutrální šedou barvu__{.primary_color} (dle kartografických zvyklostí). Barvy výplně zvolte dle citu, volitelně přidejte i barevné ohraničení.__(6)__{title="ukázka"}
-
-- Vrstvu duplikujte a nově vytvořené kopii __nastavte symbologii dle atributu "Připojení na rozvod plynu"__. V seznamu vrstev __změňte číselné kategorie na slovní popisy__{.primary_color} dle následujícího klíče:
+- Vhodným __nastavením :material-shape-outline: stylu__ nově vzniklé vrstvy __barevně odlište jednotlivé stavební objekty__ v zadané obci __dle atributu "Připojení na kanalizační síť"__:
+    1. Číselné kódy nejprve seřaďte (vzestupně) a poté je přepište na slovní popisy dle následujícího klíče:    
 
 <div class="table_centered table_no_padding grid" style="margin:0px;" markdown> <!-- https://squidfunk.github.io/mkdocs-material/reference/grids/#using-generic-grids -->
 
@@ -109,16 +108,33 @@ __:material-gas-burner: Připojení na rozvod plynu__
 </div>
 </div>
 
-- Přidejte __Základní topografickou mapu (S-JTSK)__ od ČÚZK či __ortofoto (S-JTSK)__ od ČÚZK __jako podkladovou mapu__{.primary_color}.__(7)__{title="ukázka"}
+- 
+    2. Jednotlivým kategoriím nastavte barevnou výplň dle následujícíh kartografických zásad:
+        - kategoriím typu `nedefinováno`, `nezjištěno`, `null`, `žádná hodnota` nastavte __šedou barvu__
+        - ostatní __kategorie barevně rozlište dle stupně naplnění jevu__:
+            - kategorii typu `Přípoj na kanalizační síť` odpovídajícím naplnění jevu nastavte __zelenou barvu__{style="color:green;"}
+            - kategoriím typu `Vlastní ČOV` či `Žumpa, jímka, septik` na pomezí naplnění/nenaplnění jevu nastavte neutrální __žlutou__{style="color:#f2d14e;"}/__oranžovou barvu__{style="color:orange;"}
+            - kategoriím typu `bez kanalizace` odpovídajícím nenaplnění jevu nastavte __červenou barvu__{style="color:red;"} __(6)__{title="ukázka správně navržené symbologie"}
 
-    - Aby se vrstva přidala jako podkladová mapa (Basemap), je nutné ji přidat tlačítkem __:material-button-cursor: Použít jako podkladovou mapu__{.bg} (Use a basemap)
-    - Nastavením podkladové mapy v souřadnicovém systému JTSK dojde ke správnému zarovnání budov s podkladovou mapou.
+
+- Duplikujte vrstvu stavebních objektů a vhodným __nastavením :material-shape-outline: stylu__ nově vytvořené kopie vrstvy __barevně odlište jednotlivé stavební objekty__ v zadané obci __dle atributu "Připojení na rozvod plynu"__ dle kartografických zásad uvedených výše.
+
+- Jako podkladovou mapu přidejte [__Základní topografickou mapu od Zeměměřického úřadu v souřadnicovém systému S-JTSK__]("v prostředi AGOL odpovídá službě 'Základní topografické mapy ČR (S-JTSK)' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} nebo [__Ortofotomapu ČR (S-JTSK)__]("v prostředi AGOL odpovídá službě 'Ortofotomapa ČR (S-JTSK' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} __(15)__{title="přidání podkladové mapy"}
 
 <!-- NEFUNGUJE MI TA ZMENA PROJEKCE, U TETO VRSTVY TO TREBA FUNGUJE: geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer -->
 
-- Vrstvám s klasifikací budov __nastavte exkluzivní viditelnost__{.primary_color .underlined_dotted title="funguje pouze na seskupené vrstvy"}, aby byla při přepínání viditelná vždy pouze jedna z nich. __(8)__{title="ukázka"} Zachovejte viditelnost vrstvy s obvodem obce, __ostatní vrstvy z mapy odstraňte__{.primary_color}. 
+- Proveďte finální úpravu webové mapy:
+    - vrstvy klasifikující stavební objekty dle připojení na plyn a kanalizaci seskupte do skupiny *"stavební objekty"* a této skupině __nastavte exkluzivní viditelnost__, aby byla při přepínání viditelná vždy pouze jedna vrstva stavebních objektů __(8)__{title="nastavení exkluzivní viditelnosti skupiny vrstev"}
+    - ve webové mapě zachovejte pouze skupinu vrstev *"stavební objekty"* a vrstvu zobrazující hranice obce (ostatní vrstvy z mapy odstraňte)
+    - všechny vrstvy vhodně pojmenujte
+    - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
 
-- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa1** a __nastavte sdílení v rámci oganizace__{.primary_color}.
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa1** a __nastavte sdílení v rámci oganizace__. __(17)__{title="ukázka"}
+
+<figure markdown>
+![](../assets/cviceni04/Mapa1_result.png){width=700px}
+{align=center}
+<figcaption>ukázka celkového výsledku</figcaption></figure>
 
 <!--???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
 
@@ -193,16 +209,20 @@ Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nas
 2.  ![](../assets/cviceni04/obce_vyber.png){ .no-filter width=700px} nastavení filtru dle kódu obce
 3.  ![](../assets/cviceni04/RUIAN_all.png){ .no-filter width=700px} vrstva "RÚIAN/StavebniObjekt"
 4.  ![](../assets/cviceni04/overlay.png){ .no-filter width=200px}<br> nastavení parametrů nástroje "Překrýt vrstvy"
-5.  ![](../assets/cviceni04/img05.png){ .no-filter width=700px} výsledná vrstva (budovy jsou pouze uvnitř hraice obce)
-6.  ![](../assets/cviceni04/img06.png){ .no-filter width=700px} změna symbologie (barva výplně a obrysu)
+5.  ![](../assets/cviceni04/overlay_result.png){ .no-filter width=700px} výstup nástroje "Překrýt vrstvy" (stavební objekty jsou pouze uvnitř hranice obce)
+6.  ![](../assets/cviceni04/symbologie_kanalizace.png){ .no-filter width=700px} návrh symbologie stavebních objektů dle připojení na kanalizaci
 7.  ![](../assets/cviceni04/img07.png){ .no-filter width=700px} změna podkladové mapy (Základní topografická mapa)
-8.  ![](../assets/cviceni04/img08.png){ .no-filter width=700px} exkluzivní viditelnost skupiny vrstev v legendě
+8.  ![](../assets/cviceni04/group_exclusive.png){ .no-filter width=700px} nastavení exkluzivní viditelnosti skupiny vrstev
 9.  __Příklad odevzdaného odkazu:__<br>https://ctuprague.maps.arcgis.com/apps/mapviewer/index.html?webmap=21df15ae2ca9458794a16a8fd9078b78
 10. ![](../assets/cviceni04/zjisteni_kodu_ORP.png){ .no-filter width=700px} zjištění kódu ORP
 11. ![](../assets/cviceni04/parametry_Dissolve.png){ .no-filter width=700px} parametry nástroje Dissolve boundaries
 12. ![](../assets/cviceni04/processing_extent_jako_vrstva.png){ .no-filter width=700px} nastavení ORP jako Processing extent
 13. ![](../assets/cviceni04/RUIAN_meritko.png){ .no-filter width=700px} nastavení viditelného rozsahu polygonové vrstvy stavebních objektů
 14. ![](../assets/cviceni04/overlay_rozsah.png){ .no-filter width=700px} omezení výpočtu na rozsah mapového okna
+15. ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} přidání vrstvy jako podkladové mapy
+16. ![](../assets/cviceni04/basemap_transparency.png){ .no-filter width=700px} nastavení průhlednosti podkladové mapy
+17. ![](../assets/cviceni04/mapa_content.png){ .no-filter width=700px} správné pojmenování webové mapy a nastavení sdílení v rámci organizace
+
 
 
 <hr class="level-1">
