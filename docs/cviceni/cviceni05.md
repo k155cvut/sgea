@@ -64,7 +64,7 @@ V prostředí [__ArcGIS Online__](https://www.arcgis.com/){.color_def .underline
 
 - Do prázdné mapy v ArcGIS Online __přidejte polygonovou vrstvu obcí__ [__:material-layers-triple: SGEA_obce_2025__]("Tato vrstva obsahuje polygony území všech obcí v ČR."){.bg .color_def}. __(1)__{title="ukázka polygonové vrstvy obcí"}
 
-- S využitím funkce __:material-filter: filtru__ __omezte vrstvu obcí pouze na území zadané obce.__ Nastavte :material-filter: filtr dle kódu zadané obce. __(2)__{title="nastavení filtru dle kódu obce"}
+- S využitím funkce __:material-filter: filtru__ __omezte vrstvu obcí pouze na území zadané obce.__ Nastavte :material-filter: filtr dle atributu `Kód obce`. __(2)__{title="nastavení filtru dle kódu obce"}
 
 - Dále přidejte polygonovou vrstvu [__:material-layers-triple: StavebniObjekt__]("Tato vrstva obsahuje polygony všech stavebních objektů v ČR."){.bg .color_def} z mapové služby __:material-layers: RÚIAN__{.bg} z [__Geoportálu ČÚZK__](https://ags.cuzk.gov.cz/geoprohlizec/ "Produkty → RÚIAN"){.color_def .underlined_dotted .external_link_icon target="_blank"}. Vrstvě stavebních objektů vhodně nastavte viditelný rozsah, aby bylo možné stavební objekty zobrazit i v menším měřítku (postačí do úrovně měst). __(3)__{title="přidání vrstvy stavebních objektů"}__(13)__{title="nastavení viditelného rozsahu vrstvy"}
 
@@ -153,6 +153,8 @@ __:material-gas-burner: Připojení na rozvod plynu__
 ---
 
 ## Mapa II
+Úkolem je vytvořit mapu, která bude zobrazovat __rekreační potenciál v zadané [ORP]("obce s rozšířenou působností (ORP) jsou v Česku mezičlánkem přenesené působnosti samosprávy mezi krajskými úřady a ostatními obecními úřady") pomocí metody intenzity jevu (heat map)__. Ve webové mapě bude nakonfigurováno vyskakovací okno s grafem, který bude zobrazovat vývoj výstavby domů v jednotlivých obcích zadané ORP.
+
 
 <!--
 - ~~Obě vrstvy (stavební objekty i obvod zadané obce) __exportujte do formátu Shapefile__ a __stáhněte na disk počítače__.~~
@@ -177,29 +179,44 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 -->
 
-Do prázdné mapy na ArcGIS Online přidejte vrstvu *budov individuální a hromadné rekreace* __:material-layers-triple: Stav_objekty_rekr_BOD__{.bg}. Jedná se o bodovou vrstvu budov, jež jsou typu ***stavba pro rodinnou rekreaci*** (`Způsob využití = 8`) nebo ***stavba ubytovacího zařízení*** (`Způsob využití = 11`).<br>Úkolem je vytvořit mapu zadané ORP  s tematikou rekreačního potenciálu, kde navíc nakonfigurujete vyskakovací okno s grafem, který bude prezentovat výstavbu za poslední dekády v jednotlivých obcích (atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2025__{.bg} na ArcGIS Online.<br>
+- Do prázdné mapy v ArcGIS Online __přidejte polygonovou vrstvu obcí__ [__:material-layers-triple: SGEA_obce_2025__]("Tato vrstva obsahuje polygony území všech obcí v ČR."){.bg .color_def}. __(1)__{title="ukázka polygonové vrstvy obcí"}
 
-- Pomocí aplikace filtru nad vrstvou (podobně jako u pošt v minulé úloze) nastavíme obcím podmínku typu `Nadřazená ORP = 833`. Kód ORP lze zjistit z atributové tabulky obcí.__(10)__{title="zjištění kódu ORP"}.
+- S využitím funkce __:material-filter: filtru__ __omezte vrstvu obcí pouze na obce zadané ORP.__ Nastavte :material-filter: filtr dle atributu `Název ORP`. __(19)__{title="nastavení filtru dle kódu obce"}
 
-- __Prostorovou analýzou__ (nástroj __:material-tools: Manage Data > Dissolve Boundaries__{.bg}) opět vytvoříme novou vrstvu, tentokrát obce shlukneme do plochy zadané ORP stavebních objektů pouze na území zadané obce.__(11)__{title="nastavení parametrů nástroje"}. Tentokrát nemusíme řešit zoom mapového okna a nastavení v Environments, protože počet zpracovaných obcí je již omezen filtrem. Výsledkem této analýzy získáme oblast, ve které budeme zobrazovat rekreační potenciál. V nastavení stylu jí můžeme definovat širší okraj, aby byl rozsah ORP výrazný. 
+- S využitím nástroje __prostorové analýzy__ [__:material-tools: Sloučit hranice__]("angl. Dissolve Boundaries"){.bg .color_def} __sloučíme jednotlivé obce do plochy zadané ORP__.__(11)__{title="nastavení parametrů nástroje pro sloučení hranic"}<br>
+    *(Tentokrát nemusíme řešit zoom mapového okna a nastavení parametru v *"Nastavení prostředí"*, protože počet zpracovaných obcí je již omezen filtrem. Výsledkem této analýzy získáme oblast, ve které budeme zobrazovat rekreační potenciál)*.
+    - V nastavení stylu definuje výsledné vrstvě širší okraj, aby byl rozsah ORP výrazný.__(20)__{title="ukázka výstupu nástroje pro sloučení hranic"}
 
-- Nyní přejdeme k bodové vrstvě rekreačních budov. Opět pomocí (nástroje __:material-tools: Manage Data > Overlay Layers__{.bg}) vytvoříme novou vrstvu, která bude obsahovat jen body v zadané ORP. Zde je opět vhodné nastavit zoom okna na plochu ORP, aby se snížila cena výpočtu, případně, což je lepší, můžete jako *Processing extent* nastavit *Layer* a zde vybrat výše vypočtenou plochu ORP.__(12)__{title="výběr ORP jako oblasti výpočtu"}
-  
-- Pomocí stylů nastavte nově vypočtené vrstvě rekreačních budov __symboliku na typ Heat Map__. Lze nastavit dosah vlivu jednotlivých bodů (*Area of inluence*), případně si pohrát s barevnou stupnicí a úrovní její průhlednosti.
+- Dále __přidejte bodovou vrstvu budov individuální a hromadné rekreace__ [__:material-layers-triple: Stav_objekty_rekr_BOD__]("tato vrstva obsahuje budovy, jež jsou typu "stavba pro rodinnou rekreaci" (`Způsob využití = 8`) nebo "stavba ubytovacího zařízení" (`Způsob využití = 11`)"){.bg .color_def}. __(18)__{title="ukázka bodové vrstvy rekreačních objektů"}
+
+- S využitím nástroje __prostorové analýzy__ [__:material-tools: Překrýt vrstvy__]("angl. Overlay Layers"){.bg .color_def} __vytvořte vrstvu rekreačních objektů pouze na území zadané ORP__.__(21)__{title="nastavení parametrů nástroje překrytí vrstev"}__(22)__{title="ukázka výstupu nástroje překrytí vrstev"}<br>
+    *(Před spuštěním nástroje nastavte parametr __"Nastavení prostředí"__ na __"Vrstva"__  a zvolte vrstvu ORP. Tímto omezíte výpočet pouze na rozsah VAšeho ORP a výrazně tak snížíte cenu výpočtu)* __(12)__{title="omezení výpočtu dle rozsahu vrstvy"}
+
+- Ve __:material-shape-outline: stylu__ nově vzniklé vrstvy rekreačních budov nastavte __symboliku na typ__ __Teplotní mapa__ a __zobrazte intenzitu výskytu rekreačních objektů__ v zadané ORP. <br>
+    *(Volitelně můžete nastavit "Oblast vlivu" jednotlivých bodů (*Area of inluence*) nebo přenastavit barevnou stupnici a úroveň průhlednosti.)*
 
 <figure markdown>
-![](../assets/cviceni04/Heat-map.png){width=700px}
+![](../assets/cviceni04/HeatMapa.png){width=700px}
 {align=center}
 <figcaption>tvorba mapy formou metody intenzity jevu (heat-map)</figcaption></figure>
 
-Mapu doplňte **podkladovou mapou – Základní topografickou mapou ČR**, u které snížíte intenzitu nastavením průhlednosti, dále rozsahem ORP a méně výrazně hranicemi jednotlivých obcí. 
-Polygony obcí doplňte popisem (*Labels / Add label class* v menu napravo pro vrstvu obcí).
-Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nastavte jako zobrazené vrstvy ve vyskakovacím okně jen název, kód obce a počet obyvatel. Naopak pomocí tlačítka *Add content > Chart* přidejte sloupcový graf, který bude vykreslovat výstavbu domů v obci – tu převezměte z atributů *Výstavba domů před 1919*, *Výstavba domů 1920–1949*, ... až po *Výstavba domů po 2016* (v tomto pořadí). 
+- Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nastavte jako zobrazené vrstvy ve vyskakovacím okně jen název, kód obce a počet obyvatel. Naopak pomocí tlačítka *Add content > Chart* přidejte sloupcový graf, který bude vykreslovat výstavbu domů v obci – tu převezměte z atributů *Výstavba domů před 1919*, *Výstavba domů 1920–1949*, ... až po *Výstavba domů po 2016* (v tomto pořadí). 
 
-- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__{.primary_color}.
+ <!--(atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2025__{.bg} na ArcGIS Online.-->
+
+- Jako podkladovou mapu přidejte [__Základní topografickou mapu od Zeměměřického úřadu v souřadnicovém systému S-JTSK__]("v prostředi AGOL odpovídá službě 'Základní topografické mapy ČR (S-JTSK)' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} nebo [__Ortofotomapu ČR (S-JTSK)__]("v prostředi AGOL odpovídá službě 'Ortofotomapa ČR (S-JTSK' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} __(15)__{title="přidání podkladové mapy"}
+
+- Proveďte finální úpravu webové mapy:
+    - ve webové mapě zachovejte pouze vrstvu rekreačních objektů a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
+    - všechny vrstvy vhodně pojmenujte
+    - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
+    - polygony obcí můžete doplnit popisem (*Labels / Add label class* v menu napravo pro vrstvu obcí).
+
+
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__.
 
 <figure markdown>
-![](../assets/cviceni04/ukazka_mapaII.png){width=700px}
+![](../assets/cviceni04/Mapa2_result.png){width=700px}
 {align=center}
 <figcaption>ukázka celkového výsledku</figcaption></figure>
 
@@ -215,13 +232,18 @@ Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nas
 8.  ![](../assets/cviceni04/group_exclusive.png){ .no-filter width=700px} nastavení exkluzivní viditelnosti skupiny vrstev
 9.  __Příklad odevzdaného odkazu:__<br>https://ctuprague.maps.arcgis.com/apps/mapviewer/index.html?webmap=21df15ae2ca9458794a16a8fd9078b78
 10. ![](../assets/cviceni04/zjisteni_kodu_ORP.png){ .no-filter width=700px} zjištění kódu ORP
-11. ![](../assets/cviceni04/parametry_Dissolve.png){ .no-filter width=700px} parametry nástroje Dissolve boundaries
-12. ![](../assets/cviceni04/processing_extent_jako_vrstva.png){ .no-filter width=700px} nastavení ORP jako Processing extent
+11. ![](../assets/cviceni04/Mapa2_dissolve.png){ .no-filter width=700px} nastavení parametrů nástroje "Sloučit hranice"
+12. ![](../assets/cviceni04/overlay_rozsah_vrstva.png){ .no-filter width=700px} omezení výpočtu na rozsah vrstvy
 13. ![](../assets/cviceni04/RUIAN_meritko.png){ .no-filter width=700px} nastavení viditelného rozsahu polygonové vrstvy stavebních objektů
 14. ![](../assets/cviceni04/overlay_rozsah.png){ .no-filter width=700px} omezení výpočtu na rozsah mapového okna
 15. ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} přidání vrstvy jako podkladové mapy
 16. ![](../assets/cviceni04/basemap_transparency.png){ .no-filter width=700px} nastavení průhlednosti podkladové mapy
 17. ![](../assets/cviceni04/mapa_content.png){ .no-filter width=700px} správné pojmenování webové mapy a nastavení sdílení v rámci organizace
+18. ![](../assets/cviceni04/rekr_bod_ukazka.png){ .no-filter width=700px} bodová vrstva rekreačních objektů "Stav_objekty_rekr_BOD"
+19.  ![](../assets/cviceni04/Mapa2_filtr.png){ .no-filter width=700px} nastavení filtru dle názvu ORP
+20.  ![](../assets/cviceni04/dissolve_result.png){ .no-filter width=700px} výstup nástroje "Sloučit hranice" (hranice ORP)
+21.  ![](../assets/cviceni04/overlay_Mapa2.png){ .no-filter width=700px} nastavení parametrů nástroje "Překrýt vrstvy"
+22.  ![](../assets/cviceni04/overlay_result_Mapa2.png){ .no-filter width=700px} výstup nástroje "Překrýt vrstvy" (rekreační objekty jsou pouze uvnitř hranice ORP)
 
 
 
@@ -249,7 +271,7 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
 
 ### Opravy
 
-V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému Moodle. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
+V případě, že odevzdaný výstup není správný, je vyučujícím __vrácen k opravě__. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
 [Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
 {align=center}
