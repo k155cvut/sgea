@@ -110,7 +110,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - 
     2. Jednotlivým kategoriím nastavte barevnou výplň dle následujícíh kartografických zásad:
-        - kategoriím typu `nedefinováno`, `nezjištěno`, `null`, `žádná hodnota` nastavte __šedou barvu__
+        - kategoriím typu `nedefinováno`, `nezjištěno`, `null`, `žádná hodnota` nastavte __šedou barvu__{style="color:grey;"}
         - ostatní __kategorie barevně rozlište dle stupně naplnění jevu__:
             - kategorii typu `Přípoj na kanalizační síť` odpovídajícím naplnění jevu nastavte __zelenou barvu__{style="color:green;"}
             - kategoriím typu `Vlastní ČOV` či `Žumpa, jímka, septik` na pomezí naplnění/nenaplnění jevu nastavte neutrální __žlutou__{style="color:#f2d14e;"}/__oranžovou barvu__{style="color:orange;"}
@@ -134,7 +134,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 <figure markdown>
 ![](../assets/cviceni04/Mapa1_result.png){width=700px}
 {align=center}
-<figcaption>ukázka celkového výsledku</figcaption></figure>
+<figcaption>ukázka výsledné webové mapy</figcaption></figure>
 
 <!--???+ task-fg-color "Výstup cvičení (Mapa I): Webová mapa (ukázka)"
 
@@ -193,32 +193,36 @@ __:material-gas-burner: Připojení na rozvod plynu__
     *(Před spuštěním nástroje nastavte parametr __"Nastavení prostředí"__ na __"Vrstva"__  a zvolte vrstvu ORP. Tímto omezíte výpočet pouze na rozsah VAšeho ORP a výrazně tak snížíte cenu výpočtu)* __(12)__{title="omezení výpočtu dle rozsahu vrstvy"}
 
 - Ve __:material-shape-outline: stylu__ nově vzniklé vrstvy rekreačních budov nastavte __symboliku na typ__ __Teplotní mapa__ a __zobrazte intenzitu výskytu rekreačních objektů__ v zadané ORP. <br>
-    *(Volitelně můžete nastavit "Oblast vlivu" jednotlivých bodů (*Area of inluence*) nebo přenastavit barevnou stupnici a úroveň průhlednosti.)*
+    *(Volitelně můžete nastavit "Oblast vlivu" jednotlivých bodů nebo přenastavit barevnou stupnici a úroveň průhlednosti.)*
 
 <figure markdown>
 ![](../assets/cviceni04/HeatMapa.png){width=700px}
 {align=center}
 <figcaption>tvorba mapy formou metody intenzity jevu (heat-map)</figcaption></figure>
 
-- Pro obce zapněte vyskakovací okna (*Pop-ups* v menu napravo), nejsou-li, a nastavte jako zobrazené vrstvy ve vyskakovacím okně jen název, kód obce a počet obyvatel. Naopak pomocí tlačítka *Add content > Chart* přidejte sloupcový graf, který bude vykreslovat výstavbu domů v obci – tu převezměte z atributů *Výstavba domů před 1919*, *Výstavba domů 1920–1949*, ... až po *Výstavba domů po 2016* (v tomto pořadí). 
+- Pro vrstvu s hranicemi obcí zapněte vyskakovací okna a nakonfigurujte jejich obsah:
+    - zobrazte pouze atributy (pole) `Název obce`, `Kód obce` a `Počet obyvatel`
+    - přidejte sloupcový (pruhový) graf, který bude vykreslovat vývoj výstavbu domů v obci s využitím atributů 
+    `Výstavba domů před 1919`, `Výstavba domů 1920–1945`, `Výstavba domů 1946–1970`, ... , až po `Výstavba domů po 2016` (v tomto pořadí)
 
- <!--(atributy začínající slovem *Výstavba*). Obce jsou opět k dispozici ve vrstvě __:material-layers-triple: SGEA_obce_2025__{.bg} na ArcGIS Online.-->
 
 - Jako podkladovou mapu přidejte [__Základní topografickou mapu od Zeměměřického úřadu v souřadnicovém systému S-JTSK__]("v prostředi AGOL odpovídá službě 'Základní topografické mapy ČR (S-JTSK)' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} nebo [__Ortofotomapu ČR (S-JTSK)__]("v prostředi AGOL odpovídá službě 'Ortofotomapa ČR (S-JTSK' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} __(15)__{title="přidání podkladové mapy"}
 
 - Proveďte finální úpravu webové mapy:
-    - ve webové mapě zachovejte pouze vrstvu rekreačních objektů a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
+    - ve webové mapě zachovejte pouze vrstvu rekreačních objektův zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
     - všechny vrstvy vhodně pojmenujte
+    - možnost zobrazit vyskakovací okna ponechte jen u vrstvy obcí, u zbývajících vrstev tuto možnost vypněte
     - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
-    - polygony obcí můžete doplnit popisem (*Labels / Add label class* v menu napravo pro vrstvu obcí).
+    - polygonovou vrstvu obcí můžete volitelně doplnit popisem
 
 
-- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__.
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__. __(23)__{title="ukázka"}
+
 
 <figure markdown>
 ![](../assets/cviceni04/Mapa2_result.png){width=700px}
 {align=center}
-<figcaption>ukázka celkového výsledku</figcaption></figure>
+<figcaption>ukázka výsledné webové mapy</figcaption></figure>
 
 </div> <!-- pro anotace -->
 
@@ -244,6 +248,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 20.  ![](../assets/cviceni04/dissolve_result.png){ .no-filter width=700px} výstup nástroje "Sloučit hranice" (hranice ORP)
 21.  ![](../assets/cviceni04/overlay_Mapa2.png){ .no-filter width=700px} nastavení parametrů nástroje "Překrýt vrstvy"
 22.  ![](../assets/cviceni04/overlay_result_Mapa2.png){ .no-filter width=700px} výstup nástroje "Překrýt vrstvy" (rekreační objekty jsou pouze uvnitř hranice ORP)
+23. ![](../assets/cviceni04/mapa2_content.png){ .no-filter width=700px} správné pojmenování webové mapy a nastavení sdílení v rámci organizace
 
 
 
