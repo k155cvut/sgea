@@ -202,7 +202,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Pro vrstvu s hranicemi obcí zapněte vyskakovací okna a nakonfigurujte jejich obsah:
     - zobrazte pouze atributy (pole) `Název obce`, `Kód obce` a `Počet obyvatel`
-    - přidejte sloupcový (pruhový) graf, který bude vykreslovat vývoj výstavbu domů v obci s využitím atributů 
+    - přidejte sloupcový (pruhový) graf, který bude vykreslovat vývoj výstavby domů v obci s využitím atributů 
     `Výstavba domů před 1919`, `Výstavba domů 1920–1945`, `Výstavba domů 1946–1970`, ... , až po `Výstavba domů po 2016` (v tomto pořadí)
 
 
@@ -256,22 +256,35 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 ## Výstupy cvičení
 
-Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webové mapy uložte pod požadovanými názvy a nastavte úroveň sdílení. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
+Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webové mapy uložte pod požadovanými názvy a nastavte sdílení položky na úroveň organizace. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
 
 Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
 
 Úloha je uznána, pokud webové mapy obsahují __všechny požadované náležitosti__ (viz níže).
 
 ???+ note-grey "Požadované náležitosti odevzdaných výstupů"
-    __Webová mapa__
-
+    __Mapa I__
+    
+    - zobrazuje pouze skupinu vrstev *"stavební objekty"* a vrstvu zobrazující hranice obce (ostatní vrstvy z mapy odstraňte)
+    - vrstvy jsou vhodně pojmenované (např. hranice obce, stavební objekty apod.)
     - vrstva se stavebními objekty __omezena hranicí obce__, naopak žádné __stavební objekty nesmí chybět__,
+    - u skupiny vrstev rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně),
     - __legenda se slovními popisy__ (nikoli s číselnými kódy),
-    - kategorie typu "nedefinováno", "nezjištěno" apod. neutrální __šedou barvou__, případně sloučené dohromady jako "není informace" apod.,
+    - správná aplikace barevné stupnice
     - podkladová mapa – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
-    - na vrstvy rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně),
-    - vrstvy u mapy II vhodně přejmenované,
     - sdílení webové mapy nastaveno __"v rámci organizace"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
+
+    __Mapa II__
+    
+    - zobrazuje pouze vrstvu rekreačních objektů v zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
+    - vrstvy jsou vhodně pojmenované (např. hranice ORP, rekreační objekty apod.)
+    - správná konfigurace vyskakovacího okna (vybrané atributy, sloupcový graf)
+    - možnost __zobrazit vyskakovací okna jen u vrstvy obcí__ (u zbývajících vrstev je tato možnost vypnutá)
+    - sdílení webové mapy nastaveno __"v rámci organizace"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
+
+    
+    
+    
 
 
 ### Opravy
