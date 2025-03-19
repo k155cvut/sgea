@@ -271,7 +271,7 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
     - u skupiny vrstev rozlišující připojení na kanalizaci a plyn nastavená __exkluzivní viditelnost__ (nesmí být možné je zobrazit současně),
     - __legenda se slovními popisy__ (nikoli s číselnými kódy),
     - správná aplikace barevné stupnice
-    - podkladová mapa – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
+    - podkladová mapa v S-JTSK – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
     - sdílení webové mapy nastaveno __"v rámci organizace"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
 
     __Mapa II__
@@ -280,6 +280,7 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
     - vrstvy jsou vhodně pojmenované (např. hranice ORP, rekreační objekty apod.)
     - správná konfigurace vyskakovacího okna (vybrané atributy, sloupcový graf)
     - možnost __zobrazit vyskakovací okna jen u vrstvy obcí__ (u zbývajících vrstev je tato možnost vypnutá)
+    - podkladová mapa v S-JTSK – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
     - sdílení webové mapy nastaveno __"v rámci organizace"__, __bez správného sdílení k mapě nemá vyučující přístup a nedojde ke kontrole__{style="color:#c22521;" .icon-exclm .no-dec}
 
     
