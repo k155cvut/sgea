@@ -3,7 +3,7 @@ icon: material/numeric-5-box
 title: Cvičení 5
 ---
 
-# Tvorba webové mapy, export dat
+# Tvorba webové mapy
 
 ## Cíle cvičení
 
@@ -292,7 +292,7 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
 
 V případě, že odevzdaný výstup není správný, je vyučujícím __vrácen k opravě__. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
-[Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
+[Tabulka hodnocení úloh](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=1732083778#gid=1732083778){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
 <br><br><br><br><br>

@@ -3,7 +3,7 @@ nav:
   - Základní informace: index.md
   - Cvičení:
       - Práce s webovými mapovými službami: cviceni/cviceni04.md
-      - Tvorba webové mapy, export dat: cviceni/cviceni05.md
+      - Tvorba webové mapy: cviceni/cviceni05.md
   # - Data: data.md
   - Hodnocení úloh: hodnoceni.md
 plugins:

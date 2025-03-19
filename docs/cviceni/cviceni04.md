@@ -160,7 +160,9 @@ S využitím __mapové prohlížečky__ [__ArcGIS Online__](https://www.arcgis.c
 
 2. __geologické podloží__ pod zadaným bodem
 
-    - využijte vhodné vrstvy ze stránek [__České geologické služby__](https://cgs.gov.cz/ "Webové služby → geologie (27) → Geologická mapa 1 : 50 000 (GEOČR50)"){.color_def .underlined_dotted .external_link_icon target="_blank"}
+    - využijte vhodné vrstvy ze stránek [__České geologické služby__](https://cgs.gov.cz/ "Webové služby → geologie (27) → Geologická mapa 1 : 50 000 (GEOČR50)"){.color_def .underlined_dotted .external_link_icon target="_blank"}<br>
+    *(Pro zobrazení atributů je nutné nejprve povolit vyskakovací okna)*
+    __(13)__{title="aktivace vyskakovacích oken"}
     - jako odpověď uveďte atributy __hornina__{.outlined} a __horninový typ__{.outlined}
 
 ---
@@ -194,7 +196,9 @@ S využitím __mapové prohlížečky__ [__ArcGIS Online__](https://www.arcgis.c
 6. k jaké __změně využití území__ v zadaném bodě došlo mezi lety 1990 a 2018
 
     - využijte data evropského programu [__Copernicus__](https://www.copernicus.eu/cs "program EU pro družicové pozorování Země v zájmu obecného užitku všech občanů"){.color_def .underlined_dotted .external_link_icon target="_blank"} – __:material-layers: Corine Land Cover Europe__{.bg .color_def target="_blank"}
-    - dostupné ze stránek &nbsp;[__Evropské agentury pro životní prostředí (EEA)__](https://land.copernicus.eu/en/products/corine-land-cover?tab=main){ .color_def .underlined_dotted .external_link_icon target="_blank"}&nbsp; či &nbsp;[__Copernicus Land Monitoring Service (CLMS)__](https://www.eea.europa.eu/en/datahub/datahubitem-view/a5144888-ee2a-4e5d-a7b0-2bbf21656348){ .color_def .underlined_dotted .external_link_icon target="_blank"}
+    - dostupné ze stránek &nbsp;[__Evropské agentury pro životní prostředí (EEA)__](https://land.copernicus.eu/en/products/corine-land-cover?tab=main){ .color_def .underlined_dotted .external_link_icon target="_blank"}&nbsp; či &nbsp;[__Copernicus Land Monitoring Service (CLMS)__](https://www.eea.europa.eu/en/datahub/datahubitem-view/a5144888-ee2a-4e5d-a7b0-2bbf21656348){ .color_def .underlined_dotted .external_link_icon target="_blank"}<br>
+    *(Ze stránek EEA či CLMS použijte mapovou službu 'REST API', resp. 'ESRI: REST', u WMS bohužel není v tomto případě možné vyčítat hodnoty atributů vrstvy. Pro zobrazení atributů je nutné nejprve povolit vyskakovací okna)*
+    __(11)__{title="mapová služba REST"} __(12)__{title="aktivace vyskakovacích oken"}
     - jako odpověď uveďte __kód a slovní název kategorie Land Cover pro obě období__{.outlined} a __jejich slovní porovnání__{.outlined}
 
 ---
@@ -279,7 +283,10 @@ a __příslušné datové vrstvy__. Vrstvy prolněte __pomocí nástrojů průhl
 7.  ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} nastavení ZTM jako podkladové mapy
 8.  ![](../assets/cviceni03/AGOL_ZTM.png){ .no-filter width=700px} nastavení ZTM jako podkladové mapy
 9.  ![](../assets/cviceni03/AGOL_pruhlednost.png){ .no-filter width=700px} nastavení průhlednosti vrstvy
-10.  ![](../assets/cviceni03/AGOL_print.png){ .no-filter width=700px} nastavení měřítka při exportu mapy
+10. ![](../assets/cviceni03/AGOL_print.png){ .no-filter width=700px} nastavení měřítka při exportu mapy
+11. ![](../assets/cviceni03/CLC1990_REST.png){ .no-filter width=700px} výběr mapové služby REST
+12. ![](../assets/cviceni03/CLC_popup.png){ .no-filter width=700px} aktivace vyskakovacích oken
+13. ![](../assets/cviceni03/GEO_popup.png){ .no-filter width=700px} aktivace vyskakovacích oken
 
 <hr class="level-1">
 
@@ -311,7 +318,7 @@ Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined}
 
 V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=363757){.color_def .underlined_dotted .external_link_icon target="_blank"}. Výstup lze odevzdat po __maximálně jedné opravě__, v případě pozdního odevzdání či nesprávného výstupu po první opravě je úloha __trvale označena jako nesplněná__{style="color:#c22521;"}.
 
-[Tabulka hodnocení úloh](../hodnoceni.md){ .md-button .md-button--primary }
+[Tabulka hodnocení úloh](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=0#gid=0){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
 <br><br><br><br><br>
