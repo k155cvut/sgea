@@ -99,7 +99,7 @@ __Ing. František Mužík [:fontawesome-solid-square-envelope:](mailto:frantisek
 <!-- kvuli zobrazovani na mobilu -->
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-16.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Mgr. Petra Justová [:fontawesome-solid-square-envelope:](mailto:petra.justova@fsv.cvut.cz "petra.justova@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+__Mgr. Petra Justová, Ph.D. [:fontawesome-solid-square-envelope:](mailto:petra.justova@fsv.cvut.cz "petra.justova@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
@@ -108,9 +108,9 @@ __Ing. Vojtěch Cehák [:fontawesome-solid-square-envelope:](mailto:vojtech.ceha
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-4. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadaném místě. Jde o informace administrativního charakteru (např. katastrální území), ale i přírodích poměrů (např. nadmořská výška či chráněná území v okolí). Výstupem cvičení je technická zpráva.
+4. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadané lokalitě (např. příslušnost ke katastrálnímu území či obci, nejbližší pobočka pošty či geologické podloží). V rámci cvičení jsou vytvořeny dvě tematické mapové kompozice (typ krajinného pokryvu v okolí zadané lokality a nejbližší chráněné území). Výstupem cvičení je technická zpráva s grafickými přílohami.
 
-5. __Tvorba webové mapy, export dat:__ Pomocí základní překryvné analýzy a změny symbologie upravíme data tak, aby vznikla efektní webová mapa s vlastním obsahem. Na závěr data importujeme do CAD software a vytvoříme z nich základní výkres. Výstupem cvičení je webová mapa a CAD výkres.
+5. __Tvorba webové mapy, export dat:__ Využití základních funkcí prostorové analýzy (překryv a sloučení vrstev) a vybraných metod tematické kartografie (aplikace barevných stupnic pro zobrazení kvalitativních dat či aplikace metody pro zobrazení intenzity jevu). Výstupem cvičení jsou dvě tematické webové mapy v prostředí ArcGIS Online.
 
 Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 
