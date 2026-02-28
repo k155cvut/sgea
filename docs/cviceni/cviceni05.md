@@ -153,7 +153,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 ---
 
 ## Mapa II
-Úkolem je vytvořit mapu, která bude zobrazovat __rekreační potenciál v zadané [ORP]("obce s rozšířenou působností (ORP) jsou v Česku mezičlánkem přenesené působnosti samosprávy mezi krajskými úřady a ostatními obecními úřady") pomocí metody intenzity jevu (heat map)__. Ve webové mapě bude nakonfigurováno vyskakovací okno s grafem, který bude zobrazovat vývoj výstavby domů v jednotlivých obcích zadané ORP.
+Úkolem je vytvořit mapu, která bude zobrazovat __rekreační potenciál v zadané obci pomocí metody intenzity jevu (heat map)__. Ve webové mapě bude nakonfigurováno vyskakovací okno s grafem, který bude zobrazovat vývoj výstavby domů v této obci.
 
 
 <!--
@@ -211,14 +211,14 @@ __:material-gas-burner: Připojení na rozvod plynu__
 - Jako podkladovou mapu přidejte [__Základní topografickou mapu od Zeměměřického úřadu v souřadnicovém systému S-JTSK__]("v prostředi AGOL odpovídá službě 'Základní topografické mapy ČR (S-JTSK)' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} nebo [__Ortofotomapu ČR (S-JTSK)__]("v prostředi AGOL odpovídá službě 'Ortofotomapa ČR (S-JTSK' od uživatele 'Zeměměřický Úřad'"){.color_def .underlined_dotted} __(15)__{title="přidání podkladové mapy"}
 
 - Proveďte finální úpravu webové mapy:
-    - ve webové mapě __zachovejte pouze vrstvu rekreačních objektů v zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP__ (ostatní vrstvy z mapy odstraňte)
+    - ve webové mapě __zachovejte pouze vrstvu rekreačních objektů v zadané obci a vrstvu zobrazující hranici obce__ (ostatní vrstvy z mapy odstraňte)
     - __všechny vrstvy vhodně pojmenujte__
     - možnost __zobrazit vyskakovací okna__ ponechte __jen u vrstvy obcí__, u zbývajících vrstev tuto možnost vypněte
     - u podkladové mapy nastavte vhodnou míru průhlednosti __(16)__{title="nastavení průhlednosti podkladové mapy"}
-    - polygonovou vrstvu obcí můžete volitelně doplnit popisem
 
 
-- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2025_Mapa2** a __nastavte sdílení v rámci oganizace__. __(23)__{title="ukázka"}
+
+- __Webovou mapu uložte__ s názvem **Prijmeni_Jmeno_SGEA2026_Mapa2** a __nastavte sdílení v rámci oganizace__. __(23)__{title="ukázka"}
 
 
 <figure markdown>
