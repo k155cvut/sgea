@@ -1,6 +1,6 @@
 ---
-icon: material/numeric-4-box
-title: Cvičení 4
+icon: material/numeric-3-box
+title: Cvičení 3
 ---
 
 # Práce s webovými mapovými službami
@@ -145,7 +145,7 @@ Je dán __bod o zeměpisných souřadnicích__ dle individuálního zadání (vi
 
 ??? task-fg-color "Individuální zadání"
     - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363759){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=0&single=true" width="100%" height="500" frameBorder="0"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1960098563&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
 S využitím __mapové prohlížečky__ [__ArcGIS Online__](https://www.arcgis.com/){.color_def .underlined_dotted .external_link_icon target="_blank"}, __mapových služeb__ či __geoportálů__ o zadaném bodu zjistěte:
@@ -294,7 +294,7 @@ a __příslušné datové vrstvy__. Vrstvy prolněte __pomocí nástrojů průhl
 
 Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.outlined} odevzdaná v termínu prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=363757){.color_def .underlined_dotted .external_link_icon target="_blank"}.
 
-Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
+Termín pro odevzdání úlohy: __neděle 22. března, 23.59 hod__{.outlined} 
 
 ??? task-fg-color "Výstup cvičení: Technická zpráva (ukázka)"
 

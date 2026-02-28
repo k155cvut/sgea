@@ -108,9 +108,9 @@ __Ing. Vojtěch Cehák [:fontawesome-solid-square-envelope:](mailto:vojtech.ceha
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-4. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadané lokalitě (např. příslušnost ke katastrálnímu území či obci, nejbližší pobočka pošty či geologické podloží). V rámci cvičení jsou vytvořeny dvě tematické mapové kompozice (typ krajinného pokryvu v okolí zadané lokality a nejbližší chráněné území). Výstupem cvičení je technická zpráva s grafickými přílohami.
+3. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadané lokalitě (např. příslušnost ke katastrálnímu území či obci, nejbližší pobočka pošty či geologické podloží). V rámci cvičení jsou vytvořeny dvě tematické mapové kompozice (typ krajinného pokryvu v okolí zadané lokality a nejbližší chráněné území). Výstupem cvičení je technická zpráva s grafickými přílohami.
 
-5. __Tvorba webové mapy, export dat:__ Využití základních funkcí prostorové analýzy (překryv a sloučení vrstev) a vybraných metod tematické kartografie (aplikace barevných stupnic pro zobrazení kvalitativních dat či aplikace metody pro zobrazení intenzity jevu). Výstupem cvičení jsou dvě tematické webové mapy v prostředí ArcGIS Online.
+4. __Tvorba webové mapy, export dat:__ Využití základních funkcí prostorové analýzy (překryv a sloučení vrstev) a vybraných metod tematické kartografie (aplikace barevných stupnic pro zobrazení kvalitativních dat či aplikace metody pro zobrazení intenzity jevu). Výstupem cvičení jsou dvě tematické webové mapy v prostředí ArcGIS Online.
 
 Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 

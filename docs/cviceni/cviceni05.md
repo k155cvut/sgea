@@ -1,6 +1,6 @@
 ---
-icon: material/numeric-5-box
-title: Cvičení 5
+icon: material/numeric-4-box
+title: Cvičení 4
 ---
 
 # Tvorba webové mapy
@@ -55,7 +55,7 @@ V prostředí [__ArcGIS Online__](https://www.arcgis.com/){.color_def .underline
 
 ??? task-fg-color "Individuální zadání"
     - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363763){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1732083778&single=true" width="100%" height="500" frameBorder="0"></iframe>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=508940748&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
 ## Mapa I
@@ -258,7 +258,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 Povinnými výstupy úlohy jsou __2 webové mapy__{.outlined}. Webové mapy uložte pod požadovanými názvy a nastavte sdílení položky na úroveň organizace. Tyto výstupy __není nutné odevzdat přes systém Moodle__.
 
-Termín pro odevzdání úlohy: __neděle 23. března, 23.59 hod__{.outlined} 
+Termín pro odevzdání úlohy: __neděle 22. března, 23.59 hod__{.outlined} 
 
 Úloha je uznána, pokud webové mapy obsahují __všechny požadované náležitosti__ (viz níže).
 
