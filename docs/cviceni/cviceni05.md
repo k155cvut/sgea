@@ -181,11 +181,13 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Do prázdné mapy v ArcGIS Online __přidejte polygonovou vrstvu obcí__ [__:material-layers-triple: SGEA_obce_2025__]("Tato vrstva obsahuje polygony území všech obcí v ČR."){.bg .color_def}. __(1)__{title="ukázka polygonové vrstvy obcí"}
 
-- S využitím funkce __:material-filter: filtru__ __omezte vrstvu obcí pouze na obce zadané ORP.__ Nastavte :material-filter: filtr dle atributu `Název ORP`. __(19)__{title="nastavení filtru dle kódu obce"}
+- S využitím funkce __:material-filter: filtru__ __znovu omezte vrstvu obcí pouze na zadanou.__ Nastavte :material-filter: filtr dle atributu `Název ORP`. __(19)__{title="nastavení filtru dle kódu obce"}
 
+<!--
 - S využitím nástroje __prostorové analýzy__ [__:material-tools: Sloučit hranice__]("angl. Dissolve Boundaries"){.bg .color_def} __sloučíme jednotlivé obce do plochy zadané ORP__.__(11)__{title="nastavení parametrů nástroje pro sloučení hranic"}<br>
     *(Tentokrát nemusíme řešit zoom mapového okna a nastavení parametru v *"Nastavení prostředí"*, protože počet zpracovaných obcí je již omezen filtrem. Výsledkem této analýzy získáme oblast, ve které budeme zobrazovat rekreační potenciál)*.
     - V nastavení stylu definuje výsledné vrstvě širší okraj, aby byl rozsah ORP výrazný.__(20)__{title="ukázka výstupu nástroje pro sloučení hranic"}
+-->
 
 - Dále __přidejte bodovou vrstvu budov individuální a hromadné rekreace__ [__:material-layers-triple: Stav_objekty_rekr_BOD__]("tato vrstva obsahuje budovy, jež jsou typu "stavba pro rodinnou rekreaci" (`Způsob využití = 8`) nebo "stavba ubytovacího zařízení" (`Způsob využití = 11`)"){.bg .color_def}. __(18)__{title="ukázka bodové vrstvy rekreačních objektů"}
 
