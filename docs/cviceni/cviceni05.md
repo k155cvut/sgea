@@ -181,7 +181,7 @@ __:material-gas-burner: Připojení na rozvod plynu__
 
 - Do prázdné mapy v ArcGIS Online __přidejte polygonovou vrstvu obcí__ [__:material-layers-triple: SGEA_obce_2025__]("Tato vrstva obsahuje polygony území všech obcí v ČR."){.bg .color_def}. __(1)__{title="ukázka polygonové vrstvy obcí"}
 
-- S využitím funkce __:material-filter: filtru__ __znovu omezte vrstvu obcí pouze na zadanou.__ Nastavte :material-filter: filtr dle atributu `Název ORP`. __(19)__{title="nastavení filtru dle kódu obce"}
+- S využitím funkce __:material-filter: filtru__ __znovu omezte vrstvu obcí pouze na zadanou.__ Případně lze použít webovou mapu z minulého příkladu a přeuložit ji pod novým názvem a vrstvy upravit. __(19)__{title="nastavení filtru dle kódu obce"}
 
 <!--
 - S využitím nástroje __prostorové analýzy__ [__:material-tools: Sloučit hranice__]("angl. Dissolve Boundaries"){.bg .color_def} __sloučíme jednotlivé obce do plochy zadané ORP__.__(11)__{title="nastavení parametrů nástroje pro sloučení hranic"}<br>
@@ -192,9 +192,9 @@ __:material-gas-burner: Připojení na rozvod plynu__
 - Dále __přidejte bodovou vrstvu budov individuální a hromadné rekreace__ [__:material-layers-triple: Stav_objekty_rekr_BOD__]("tato vrstva obsahuje budovy, jež jsou typu "stavba pro rodinnou rekreaci" (`Způsob využití = 8`) nebo "stavba ubytovacího zařízení" (`Způsob využití = 11`)"){.bg .color_def}. __(18)__{title="ukázka bodové vrstvy rekreačních objektů"}
 
 - S využitím nástroje __prostorové analýzy__ [__:material-tools: Překrýt vrstvy__]("angl. Overlay Layers"){.bg .color_def} __vytvořte vrstvu rekreačních objektů pouze na území zadané ORP__.__(21)__{title="nastavení parametrů nástroje překrytí vrstev"}__(22)__{title="ukázka výstupu nástroje překrytí vrstev"}<br>
-    *(Před spuštěním nástroje nastavte parametr __"Nastavení prostředí"__ na __"Vrstva"__  a zvolte vrstvu ORP. Tímto omezíte výpočet pouze na rozsah VAšeho ORP a výrazně tak snížíte cenu výpočtu)* __(12)__{title="omezení výpočtu dle rozsahu vrstvy"}
+    *(Před spuštěním nástroje nastavte parametr __"Nastavení prostředí"__ na __"Vrstva"__  a zvolte vrstvu zadané obce. Tímto omezíte výpočet pouze na rozsah své obce a výrazně tak snížíte cenu výpočtu)* __(12)__{title="omezení výpočtu dle rozsahu vrstvy"}
 
-- Ve __:material-shape-outline: stylu__ nově vzniklé vrstvy rekreačních budov nastavte __symboliku na typ__ __Teplotní mapa__ a __zobrazte intenzitu výskytu rekreačních objektů__ v zadané ORP. <br>
+- Ve __:material-shape-outline: stylu__ nově vzniklé vrstvy rekreačních budov nastavte __symboliku na typ__ __Teplotní mapa__ a __zobrazte intenzitu výskytu rekreačních objektů__ v zadané obci. <br>
     *(Volitelně můžete nastavit "Oblast vlivu" jednotlivých bodů nebo přenastavit barevnou stupnici a úroveň průhlednosti.)*
 
 <figure markdown>
@@ -278,8 +278,8 @@ Termín pro odevzdání úlohy: __neděle 22. března, 23.59 hod__{.outlined}
 
     __Mapa II__
     
-    - zobrazuje pouze vrstvu rekreačních objektů v zadané ORP a vrstvu zobrazující hranice obcí a zadaného ORP (ostatní vrstvy z mapy odstraňte)
-    - vrstvy jsou vhodně pojmenované (např. hranice ORP, rekreační objekty apod.)
+    - zobrazuje pouze vrstvu heat-map rekreačních objektů v zadané obci a vrstvu zobrazující rozsah obce (ostatní vrstvy z mapy odstraňte)
+    - vrstvy jsou vhodně pojmenované (např. hranice obce, rekreační objekty apod.)
     - správná konfigurace vyskakovacího okna (vybrané atributy, sloupcový graf)
     - možnost __zobrazit vyskakovací okna jen u vrstvy obcí__ (u zbývajících vrstev je tato možnost vypnutá)
     - podkladová mapa v S-JTSK – __Základní topografická mapa__ nebo __Ortofoto od Zeměměřického úřadu__,
