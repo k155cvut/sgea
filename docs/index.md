@@ -118,13 +118,12 @@ Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 
 ## Harmonogram :material-calendar:{style="clip-path: circle(); color:var(--md-default-bg-color); background-color:var(--md-default-fg-color); padding:6px; font-size:120%; vertical-align:-.1em"} {: style="margin-bottom:0;"}
 
-[![](./assets/index/schedule_light.svg#only-light){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/154SGEA/semester/B242){target="_blank"}
-[![](./assets/index/schedule_dark.svg#only-dark){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/154SGEA/semester/B242){target="_blank"}
+[![](./assets/index/schedule_LS252.png){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/154SGEA/semester/B252){target="_blank"}
 
 ---
 
 <figure markdown>
-![](./assets/Harmonogram_3-4_2025.png){ width="100%" }
+![](../assets/Harmonogram_3-4_2026.png){ width="100%" }
     <figcaption>Přiřazení učeben a učitelů k paralelkám</figcaption>
 </figure>
 
