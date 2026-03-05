@@ -151,7 +151,7 @@ Díky **ArcGIS Online** mohou uživatelé snadno integrovat různé zdroje dat, 
 Je dán __bod o zeměpisných souřadnicích__ dle individuálního zadání (viz níže).
 
 ??? task-fg-color "Individuální zadání"
-    - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363759){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>
+    <!-- - také viz [Moodle](https://moodle-vyuka.cvut.cz/mod/page/view.php?id=363759){.color_def .underlined_dotted .external_link_icon target="_blank"}<br><br>-->
     <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRxRPIWMyUuEA30Y8UhDF8f-T56L_N9MBSQeZ5eaw8GshZeA9MeO4aFCUhp3AnsT65sS3914Sjd8elH/pubhtml?gid=1960098563&single=true" width="100%" height="500" frameBorder="0"></iframe>
 
 
@@ -192,10 +192,10 @@ S využitím __mapové prohlížečky__ [__ArcGIS Online__](https://www.arcgis.c
 
     - výšku odečtěte ze __tří různých mapových podkladů__{.primary_color} ~~a __výsledky porovnejte__~~
     - doporučenými zdroji jsou např. 
-    [__Základní topografické mapy ČR__](https://ags.cuzk.cz/geoprohlizec/ "obsahují vrstevnice s popisy výšky"){.color_def .underlined_dotted .external_link_icon target="_blank"}, webová aplikace 
-    [__Analýzy výškopisu__](https://ags.cuzk.cz/av/ "režim Výpis souřadnic bodu (výškový systém Bpv (m))"){.color_def .underlined_dotted .external_link_icon target="_blank"} 
-    (ČÚZK) nebo mapový portál 
-    [__Mapy.cz__](https://mapy.cz/ "funkce Měření → Výškový profil"){.color_def .underlined_dotted .external_link_icon target="_blank"}
+    [__Základní topografické mapy ČR__](https://ags.cuzk.cz/geoprohlizec/ "obsahují vrstevnice s popisy výšky"){.color_def .underlined_dotted .external_link_icon target="_blank"}, mapový portál 
+    [__Mapy.cz__](https://mapy.cz/ "funkce Měření → Výškový profil"){.color_def .underlined_dotted .external_link_icon target="_blank"} nebo webová aplikace 
+    [__Analýzy výškopisu__](https://ags.cuzk.cz/av/ "režim Výpis souřadnic bodu → souřadnice H (DMR5G)"){.color_def .underlined_dotted .external_link_icon target="_blank"} 
+    (ČÚZK) __(14)__{title="zadání souřadnic bodu"}
     - jako odpověď uveďte __3 hodnoty nadmořské výšky včetně zdroje každé z nich__{.outlined}
 
 ---
@@ -294,6 +294,8 @@ a __příslušné datové vrstvy__. Vrstvy prolněte __pomocí nástrojů průhl
 11. ![](../assets/cviceni03/CLC1990_REST.png){ .no-filter width=700px} výběr mapové služby REST
 12. ![](../assets/cviceni03/CLC_popup.png){ .no-filter width=700px} aktivace vyskakovacích oken
 13. ![](../assets/cviceni03/GEO_popup.png){ .no-filter width=700px} aktivace vyskakovacích oken
+14.  ![](../assets/cviceni03/GeoprohlizecCUZK_coord.png){ .no-filter width=600px} zadání souřadnic bodu v aplikaci Analýza výškopisu
+15.  ![](../assets/cviceni03/GeoprohlizecCUZK_vypis.png){ .no-filter width=600px} po zapnutí režimu "Výpis souřadnic bodu" odečtěte výšku "H" v souřadnicovém systému S-JTSK
 
 <hr class="level-1">
 

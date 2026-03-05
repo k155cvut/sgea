@@ -63,18 +63,19 @@ Pokud by vás geomatika (obor zabývající se geografickými informačními sys
 {: style="opacity:50%;margin-top:0;"}
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-1.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__prof. Ing. Jiří Cajthaml, Ph.D. [:fontawesome-solid-square-envelope:](mailto:jiri.cajthaml@fsv.cvut.cz "jiri.cajthaml@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+[__prof. Ing. Jiří Cajthaml, Ph.D.__](https://geomatics.fsv.cvut.cz/eemployees/jiri-cajthaml/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} __Ing. Tomáš Janata, Ph.D. [:fontawesome-solid-square-envelope:](mailto:tomas.janata@fsv.cvut.cz "tomas.janata@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} [__Ing. Tomáš Janata, Ph.D.__](https://geomatics.fsv.cvut.cz/employees/tomas-janata/){target="_blank"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-4. __GIS__: základní pojmy GIS, vektorová a rastrová data, topologie, atributová data, webové mapové služby, zdroje dat (OSM, RÚIAN, WMS), geoprostorové analýzy, 3D GIS, cloudové řešení ArcGIS Online. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
-5. __Kartografie__: základní pojmy v kartografii, znakový klíč a jazyk mapy, polohopis, výškopis, popis, kartografická generalizace, státní mapové dílo středního měřítka (civilní i vojenské), tematická kartografie, webová kartografie. [:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}
+**3.** __GIS__: základní pojmy GIS, vektorová a rastrová data, topologie, atributová data, webové mapové služby, zdroje dat (OSM, RÚIAN, WMS), geoprostorové analýzy, 3D GIS, cloudové řešení ArcGIS Online. <!--[:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}-->
 
-Ostatní přednášky zajišťuje Katedra speciální geodézie (K154).
+**4.** __Kartografie__: základní pojmy v kartografii, znakový klíč a jazyk mapy, polohopis, výškopis, popis, kartografická generalizace, státní mapové dílo středního měřítka (civilní i vojenské), tematická kartografie, webová kartografie. <!--[:material-file-pdf-box:](# "stažení prezentace"){style="color:var(--md-default-fg-color);"}-->
+
+Ostatní přednášky zajišťuje [Katedra speciální geodézie (K154)](https://k154.fsv.cvut.cz/vyuka/ostatni/sgea/).
 
 ---
 
@@ -83,34 +84,51 @@ Ostatní přednášky zajišťuje Katedra speciální geodézie (K154).
 účast povinná (s možnými náhradami)
 {: style="opacity:50%;margin-top:0;"}
 
-![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Ing. Tomáš Janata, Ph.D. [:fontawesome-solid-square-envelope:](mailto:tomas.janata@fsv.cvut.cz "tomas.janata@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} [__Ing. Tomáš Janata, Ph.D.__](https://geomatics.fsv.cvut.cz/employees/tomas-janata/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Ing. Jaroslav Šedina, Ph.D. [:fontawesome-solid-square-envelope:](mailto:jaroslav.sedina@fsv.cvut.cz "jaroslav.sedina@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+[__Ing. Jaroslav Šedina, Ph.D.__](https://geomatics.fsv.cvut.cz/employees/jaroslav-sedina/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.75x-4.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Ing. František Mužík [:fontawesome-solid-square-envelope:](mailto:frantisek.muzik@fsv.cvut.cz "frantisek.muzik@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+[__Ing. František Mužík__](https://geomatics.fsv.cvut.cz/employees/frantisek-muzik/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-16.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Mgr. Petra Justová, Ph.D. [:fontawesome-solid-square-envelope:](mailto:petra.justova@fsv.cvut.cz "petra.justova@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+[__Mgr. Petra Justová, Ph.D.__](https://geomatics.fsv.cvut.cz/employees/petra-justova/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
 ![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.3x.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
-__Ing. Vojtěch Cehák [:fontawesome-solid-square-envelope:](mailto:vojtech.cehak@fsv.cvut.cz "vojtech.cehak@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+[__Ing. Vojtěch Cehák__](https://geomatics.fsv.cvut.cz/employees/vojtech-cehak/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
 {style="display:inline; white-space: nowrap; line-height:2;"}
 <!-- kvuli zobrazovani na mobilu -->
 
-3. __Práce s webovými mapovými službami:__ Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadané lokalitě (např. příslušnost ke katastrálnímu území či obci, nejbližší pobočka pošty či geologické podloží). V rámci cvičení jsou vytvořeny dvě tematické mapové kompozice (typ krajinného pokryvu v okolí zadané lokality a nejbližší chráněné území). Výstupem cvičení je technická zpráva s grafickými přílohami.
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-13.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} 
+[__Ing. Josef Münzberger__](https://geomatics.fsv.cvut.cz/eemployees/josef-munzberger/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
 
-4. __Tvorba webové mapy, export dat:__ Využití základních funkcí prostorové analýzy (překryv a sloučení vrstev) a vybraných metod tematické kartografie (aplikace barevných stupnic pro zobrazení kvalitativních dat či aplikace metody pro zobrazení intenzity jevu). Výstupem cvičení jsou dvě tematické webové mapy v prostředí ArcGIS Online.
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+[__Ing. Jan Koudelka__](https://geomatics.fsv.cvut.cz/employees/jan-koudelka/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+[__Ing. Vojtěch Müller__](https://geomatics.fsv.cvut.cz/employees/vojtech-muller/){target="_blank"}__&nbsp;__{style="margin-left:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+
+
+
+
+**3.** [__Práce s webovými mapovými službami:__](../cviceni/cviceni04/) Připojením webových vrstev z různých zdrojů do jedné mapy získáte základní informace o zadané lokalitě (např. příslušnost ke katastrálnímu území či obci, nejbližší pobočka pošty či geologické podloží). V rámci cvičení jsou vytvořeny dvě tematické mapové kompozice (typ krajinného pokryvu v okolí zadané lokality a nejbližší chráněné území). Výstupem cvičení je technická zpráva s grafickými přílohami.
+
+**4.** [__Tvorba webové mapy, export dat:__](../cviceni/cviceni05/) Využití základních funkcí prostorové analýzy (překryv a sloučení vrstev) a vybraných metod tematické kartografie (aplikace barevných stupnic pro zobrazení kvalitativních dat či aplikace metody pro zobrazení intenzity jevu). Výstupem cvičení jsou dvě tematické webové mapy v prostředí ArcGIS Online.
 
 Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 
@@ -133,3 +151,39 @@ Ostatní cvičení zajišťuje Katedra speciální geodézie (K154).
 {align=center}
 
 <br>
+
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-1.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__prof. Ing. Jiří Cajthaml, Ph.D. [:fontawesome-solid-square-envelope:](mailto:jiri.cajthaml@fsv.cvut.cz "jiri.cajthaml@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} __Ing. Tomáš Janata, Ph.D. [:fontawesome-solid-square-envelope:](mailto:tomas.janata@fsv.cvut.cz "tomas.janata@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__Ing. Tomáš Janata, Ph.D. [:fontawesome-solid-square-envelope:](mailto:tomas.janata@fsv.cvut.cz "tomas.janata@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/iconmonstr-user-male-thin.png){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__Ing. Jaroslav Šedina, Ph.D. [:fontawesome-solid-square-envelope:](mailto:jaroslav.sedina@fsv.cvut.cz "jaroslav.sedina@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.75x-4.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__Ing. František Mužík [:fontawesome-solid-square-envelope:](mailto:frantisek.muzik@fsv.cvut.cz "frantisek.muzik@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-16.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__Mgr. Petra Justová, Ph.D. [:fontawesome-solid-square-envelope:](mailto:petra.justova@fsv.cvut.cz "petra.justova@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+<!--
+![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.3x.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"}
+__Ing. Vojtěch Cehák [:fontawesome-solid-square-envelope:](mailto:vojtech.cehak@fsv.cvut.cz "vojtech.cehak@fsv.cvut.cz"){style="color:var(--md-default-fg-color);"}__{style="padding-right:1rem;"}
+{style="display:inline; white-space: nowrap; line-height:2;"}
+<!-- kvuli zobrazovani na mobilu -->
+-->
