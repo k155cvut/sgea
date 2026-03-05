@@ -303,14 +303,19 @@ Povinným výstupem úlohy je __technická zpráva v elektronické podobě__{.ou
 
 Termín pro odevzdání úlohy: __neděle 22. března, 23.59 hod__{.outlined} 
 
-??? task-fg-color "Výstup cvičení: Technická zpráva (ukázka)"
+[:material-download: Technická zpráva - vzor :material-layers:](../assets/cviceni04/TZ-template.docx){ .md-button .md-button--primary .button_smaller }
+      {: .button_array style="justify-content:flex-start;"}
+
+<!--??? task-fg-color "Výstup cvičení: Technická zpráva (ukázka)"
 
     <iframe src="https://drive.google.com/file/d/1ZqcjTFb2wTY1slDzBp9NWATWiMmgRROJ/preview" width="100%" height="100%" style="border:0;"></iframe>
     {.custom_height}
 
+
 <style>
     .custom_height{height:80vw;}
 </style>
+    -->
 
 Úloha je uznána, pokud technická zpráva obsahuje __všechny požadované náležitosti__ (viz níže) a má __správný formát__ (PDF).
 
