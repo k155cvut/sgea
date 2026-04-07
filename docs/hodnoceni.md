@@ -3,10 +3,10 @@
 
 Pro udělení zápočtu je nutné mít __splněné všechny úlohy__. 
 
-[Úloha 4 - Práce s webovými mapovými službami](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=0#gid=0){ .md-button .md-button--primary target="_blank"}
+[Úloha 3 - Práce s webovými mapovými službami](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=1960098563#gid=1960098563){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
-[Úloha 5 - Tvorba webové mapy](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=1732083778#gid=1732083778){ .md-button .md-button--primary target="_blank"}
+[Úloha 4 - Tvorba webové mapy](https://docs.google.com/spreadsheets/d/1oa_5s2p5B-eIXSad0H14NJTzTYX3YhDc9FUlwDHvrrc/edit?gid=508940748#gid=508940748){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
 
